@@ -1,0 +1,468 @@
+/*child snitch*/
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+/* Internet Explorer 10-11 */
+/* Microsoft Edge */
+/*
+#menu-menu_social,
+.post_tags,
+.wp-tag-cloud li a,
+.posted-on, .byline,.tags-links,.cat-links,.comments-link, .site-info,
+.entry-content p,
+.widget input,
+.main-navigation .nav-menu a,
+.pagination .nav-links,
+.entry-title, h1.entry-title,
+.page-title,
+.site-title,
+div.textwidget,
+*/
+html, ::placeholder, body, div, span, applet, object, iframe, h1, h2, .site-title, .entry-title, h3, h4, h5, h6, p, p.site-description, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, .site-info .menu-item, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  font-family: "HelveticaNeue-Light",     "Helvetica Neue Light",     "Helvetica Neue",     Helvetica, Arial,     "Lucida Grande",     sans-serif;
+  font-weight: 300;
+  line-height: auto;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  border: none;
+  text-decoration: none;
+  color: #a1a1a1;
+  font-size: small;
+}
+
+@media screen and (min-width: 38.75em) {
+  html, ::placeholder, body, div, span, applet, object, iframe, h1, h2, .site-title, .entry-title, h3, h4, h5, h6, p, p.site-description, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, .site-info .menu-item, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    color: aqua;
+    font-size: small;
+  }
+}
+
+@media screen and (min-width: 46.25em) {
+  html, ::placeholder, body, div, span, applet, object, iframe, h1, h2, .site-title, .entry-title, h3, h4, h5, h6, p, p.site-description, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, .site-info .menu-item, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    color: purple;
+    font-size: small;
+  }
+}
+
+@media screen and (min-width: 55em) {
+  html, ::placeholder, body, div, span, applet, object, iframe, h1, h2, .site-title, .entry-title, h3, h4, h5, h6, p, p.site-description, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, .site-info .menu-item, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    color: blue;
+    font-size: small;
+  }
+}
+
+@media screen and (min-width: 59.6875em) {
+  html, ::placeholder, body, div, span, applet, object, iframe, h1, h2, .site-title, .entry-title, h3, h4, h5, h6, p, p.site-description, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, .site-info .menu-item, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    color: pink;
+    font-size: small;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  html, ::placeholder, body, div, span, applet, object, iframe, h1, h2, .site-title, .entry-title, h3, h4, h5, h6, p, p.site-description, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, .site-info .menu-item, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    color: orange;
+    font-size: small;
+  }
+}
+
+@media screen and (min-width: 77.5em) {
+  html, ::placeholder, body, div, span, applet, object, iframe, h1, h2, .site-title, .entry-title, h3, h4, h5, h6, p, p.site-description, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, .site-info .menu-item, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    color: #a1a1a1;
+    font-size: small;
+  }
+}
+
+@media screen and (min-width: 38.75em), screen and (min-width: 46.25em), screen and (min-width: 55em), screen and (min-width: 59.6875em), screen and (min-width: 68.75em), screen and (min-width: 77.5em) {
+  body {
+    line-height: auto;
+  }
+  body #page nav.navigation.pagination {
+    margin: 0;
+  }
+  body #page nav.navigation.pagination .nav-links {
+    min-height: 0;
+  }
+  body #page nav.navigation.pagination .page-numbers {
+    line-height: inherit;
+    padding: 0;
+  }
+  body #page #content.site-content {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body #page #content.site-content #primary.content-area, body #page #content.site-content .navigation, body #page #content.site-content .single-navigation {
+    text-align: center;
+    margin: 0 auto;
+    width: 1400px;
+    padding-left: 450px;
+  }
+  body #page #content.site-content #primary.content-area main, body #page #content.site-content .navigation main, body #page #content.site-content .single-navigation main {
+    background-color: red;
+  }
+  body #page #content.site-content #primary.content-area main article.hentry, body #page #content.site-content .navigation main article.hentry, body #page #content.site-content .single-navigation main article.hentry {
+    float: left;
+    text-align: left;
+    background: transparent;
+    box-shadow: none;
+  }
+  body #page #content.site-content #primary.content-area main article.hentry img, body #page #content.site-content #primary.content-area main article.hentry .entry-header, body #page #content.site-content .navigation main article.hentry img, body #page #content.site-content .navigation main article.hentry .entry-header, body #page #content.site-content .single-navigation main article.hentry img, body #page #content.site-content .single-navigation main article.hentry .entry-header {
+    float: left;
+  }
+  body #page #content.site-content #primary.content-area main article.hentry .entry-header, body #page #content.site-content .navigation main article.hentry .entry-header, body #page #content.site-content .single-navigation main article.hentry .entry-header {
+    padding: 0;
+    margin: 0;
+  }
+  body #page #content.site-content article.hentry {
+    margin: 0;
+  }
+  body #page #content.site-content .hentry + .hentry {
+    margin-top: 0;
+  }
+  body #page .site-footer {
+    box-shadow: none;
+  }
+  body * {
+    box-shadow: none;
+  }
+}
+
+body, body:before {
+  background-color: #f9f9f9;
+}
+
+body:before {
+  box-shadow: none !important;
+  width: 25%;
+}
+
+h1.site-title {
+  line-height: auto;
+}
+
+h1.site-title, h2.entry-title, .posted-on, p.site-description {
+  font-style: italic;
+}
+
+h1.site-title, article img {
+  margin-bottom: 5%;
+}
+
+.site-description::before, .cat-title::before, .tag-title::before {
+  display: block;
+  content: "__";
+}
+
+.navigation span:nth-child(2), .navigation span:first-child {
+  margin-right: 10px;
+}
+
+i.material-icons {
+  vertical-align: bottom;
+}
+
+.entry-header *::before, .sidebar-entry-content *::before, .navigation *::before, .single-navigation *::before {
+  display: none;
+}
+
+.entry-header .cat-links, .entry-header span.tags-links, .sidebar-entry-content .cat-links, .sidebar-entry-content span.tags-links, .navigation .cat-links, .navigation span.tags-links, .single-navigation .cat-links, .single-navigation span.tags-links {
+  display: block;
+}
+
+body * {
+  box-shadow: none;
+}
+
+body .tags-links span, body .tags-links a {
+  color: #a1a1a1;
+  padding: 0.3em 0.6em;
+  border-radius: .3em;
+}
+
+body .tags-links a {
+  border: 1px solid #ccc;
+}
+
+body .tags-links span.current {
+  background-color: black;
+  font-weight: 300;
+}
+
+body .tags-links a:hover {
+  border-color: black;
+  color: black;
+}
+
+body .cat-links {
+  text-transform: uppercase;
+}
+
+body .pages span, body .pages a {
+  color: #a1a1a1;
+  padding: 0.2em 0.5em;
+}
+
+body .pages a {
+  background-color: transparent;
+}
+
+body .pages span.current {
+  border-bottom: 1px solid black;
+  font-weight: 300;
+}
+
+body .pages a:hover {
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+body h1.site-title a:hover, body .posted-on a:hover, body h2.entry-title a:hover, body span.tags-links a:hover, body .cat-links a:hover, body .page-numbers a:hover, body .secondary a:hover, body .prev_link a:hover, body .next_link a:hover {
+  color: black;
+}
+
+body .sidebar header .site-title, body .sidebar header .site-description {
+  display: inline-block;
+}
+
+body .sidebar .secondary {
+  margin: 0;
+  padding: 0;
+}
+
+body .pagination, body .single-navigation {
+  background-color: transparent;
+  z-index: 10;
+}
+
+body .pagination span, body .single-navigation span {
+  padding: 20px 0;
+  display: inline-block;
+}
+
+body .pagination .posted-on, body .single-navigation .posted-on {
+  margin: 0 1em;
+}
+
+body .pagination .nav-links, body .single-navigation .nav-links {
+  text-align: left;
+}
+
+body .pagination .nav-links .next_link, body .single-navigation .nav-links .next_link {
+  margin-left: 20px;
+}
+
+body .pagination .nav-links .pages, body .single-navigation .nav-links .pages {
+  margin: 0;
+}
+
+body .pagination .nav-links .prev_link, body .single-navigation .nav-links .prev_link {
+  margin-right: 20px;
+}
+
+body .pagination .nav-links .next_link, body .pagination .nav-links .pages, body .pagination .nav-links .prev_link, body .single-navigation .nav-links .next_link, body .single-navigation .nav-links .pages, body .single-navigation .nav-links .prev_link {
+  display: inline-block;
+  vertical-align: -webkit-baseline-middle;
+}
+
+body .pagination .nav-links .next_link .page-numbers, body .pagination .nav-links .pages .page-numbers, body .pagination .nav-links .prev_link .page-numbers, body .single-navigation .nav-links .next_link .page-numbers, body .single-navigation .nav-links .pages .page-numbers, body .single-navigation .nav-links .prev_link .page-numbers {
+  margin: 0 10px 0 0;
+  padding: 0;
+}
+
+body .pagination .nav-links .next_link .page-numbers:last-child, body .pagination .nav-links .pages .page-numbers:last-child, body .pagination .nav-links .prev_link .page-numbers:last-child, body .single-navigation .nav-links .next_link .page-numbers:last-child, body .single-navigation .nav-links .pages .page-numbers:last-child, body .single-navigation .nav-links .prev_link .page-numbers:last-child {
+  margin: 0;
+}
+
+@media screen and (max-width: 59.6875em) {
+  body .pagination .nav-links .next_link, body .pagination .nav-links .pages, body .pagination .nav-links .prev_link, body .single-navigation .nav-links .next_link, body .single-navigation .nav-links .pages, body .single-navigation .nav-links .prev_link {
+    width: 30%;
+    margin: 0 1.6666%;
+    border-top: 1px solid black;
+    padding: 1em 0 0 0;
+  }
+  body .pagination .nav-links .next_link a, body .pagination .nav-links .next_link span, body .pagination .nav-links .pages a, body .pagination .nav-links .pages span, body .pagination .nav-links .prev_link a, body .pagination .nav-links .prev_link span, body .single-navigation .nav-links .next_link a, body .single-navigation .nav-links .next_link span, body .single-navigation .nav-links .pages a, body .single-navigation .nav-links .pages span, body .single-navigation .nav-links .prev_link a, body .single-navigation .nav-links .prev_link span {
+    vertical-align: top;
+  }
+}
+
+body #primary.content-area {
+  /*
+        margin-top: 6%;
+        article.hentry{
+            padding: 0;
+            background-color: transparent;
+            margin-bottom: $basic_margin*4;
+            .entry-header, .sidebar-entry-content{
+                padding: 0;
+                *{ margin-top: 0px; line-height: 2.5;}
+                h2.entry-title{ display: inline-block; }
+                .cat-links a{ margin-right: .25em;}
+            }
+        }
+        */
+}
+
+body .site-footer {
+  background-color: transparent;
+}
+
+body .site-footer .site-info {
+  padding: 5em 0;
+}
+
+body.single-post .post-navigation {
+  border-top: none;
+  margin: 0;
+}
+
+body.single-post .post-navigation .nav-links i.material-icons {
+  vertical-align: bottom;
+}
+
+body.single-post .post-navigation .nav-links div:first-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 5%;
+}
+
+body.single-post .post-navigation .nav-links div:nth-child(2) {
+  padding-top: 5%;
+}
+
+body.single-post .post-navigation .nav-links .nav-previous i.material-icons {
+  margin-right: 0.25em;
+}
+
+body.single-post .post-navigation .nav-links .nav-next i.material-icons {
+  margin-left: 0.25em;
+}
+
+body.single-post .post-navigation .nav-links .nav-previous, body.single-post .post-navigation .nav-links .nav-next {
+  background-image: none;
+}
+
+body.single-post .post-navigation .nav-links .nav-previous .meta-nav, body.single-post .post-navigation .nav-links .nav-next .meta-nav {
+  text-transform: capitalize;
+}
+
+body.single-post .post-navigation .nav-links .nav-previous a:before, body.single-post .post-navigation .nav-links .nav-next a:before {
+  background-color: transparent;
+}
+
+body.single-post .post-navigation .nav-links .nav-previous a, body.single-post .post-navigation .nav-links .nav-next a {
+  padding: 0;
+}
+
+@media screen and (max-width: 59.6875em) {
+  body.single-post .post-navigation .nav-links div:first-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-right: 3%;
+  }
+  body.single-post .post-navigation .nav-links div:nth-child(2) {
+    padding-top: 0;
+    margin-left: 3%;
+  }
+  body.single-post .post-navigation .nav-links .nav-previous, body.single-post .post-navigation .nav-links .nav-next {
+    border-top: 1px solid black;
+    padding: 0;
+    width: 47%;
+    float: left;
+  }
+  body.single-post .post-navigation .nav-links .nav-previous a, body.single-post .post-navigation .nav-links .nav-next a {
+    padding: 1em 0 0 0;
+  }
+}
+
+@media screen and (min-width: 38.75em) {
+  body #page .sidebar .secondary .main-navigation ul {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 59.6876em) {
+  body #page {
+    max-width: none;
+  }
+  body #page #sidebar, body #page div.custom-column {
+    margin-top: 2%;
+  }
+  body #page .sidebar {
+    width: 25%;
+  }
+  body #page .sidebar .site-header, body #page .sidebar .sidebar-entry-content {
+    margin: 0 0 7.5% 0;
+  }
+  body #page .sidebar .sidebar-entry-content {
+    padding: 0 20%;
+  }
+  body #page .site-content, body #page .site-footer {
+    margin-left: 25%;
+  }
+  body #page .site-content .site-main, body #page .site-footer .site-main {
+    padding: 0;
+  }
+  body #page nav.navigation {
+    box-shadow: none;
+  }
+}
+
+/*
+.main-navigation .nav-menu li{
+    border:none;
+}
+.main-navigation .nav-menu li.current-menu-item a{
+    @include current_item();
+}
+.entry-title{ display: inline-block;}
+.entry-title, h1.entry-title, .posted-on, .byline, .tags-links{
+    margin-right: .5em;
+    display: inline-block;
+}
+*/
+/*
+// mobile
+@media screen and (max-width: 59.6875em){
+    body{
+        #page{
+            .site-branding{
+                padding-right: 0;
+                padding-left: 60px;
+                .secondary-toggle{ left:0;}
+            }
+            nav.navigation{box-shadow: none;}
+            .sidebar{
+                .site-header{ border-bottom: none;}
+                .secondary{
+                    padding-top: 5%;
+                    background-color: $highligted;
+                    margin: 0;
+                    .main-navigation ul{
+                        border-bottom: none;
+                        li{ border:none;} 
+                    }                    
+                    .social-navigation a{
+                        height: 1em; width: 1em;
+                    }
+                    .post_tags, .main-navigation, .social-navigation{
+                        margin: 0 ;
+                        padding: 2% 7.6923%;
+                    }
+                    .widget_search{
+                        margin: (7.6923/2)% 7.6923% 7.6923% 7.6923%;
+                        width: auto;
+                    }
+                }
+            }
+            .site-content, .site-footer{
+                margin: 0;
+                padding: 7.6923%;
+                width:100%;
+                ul{
+                    list-style: none;
+                    margin: 0;
+                }
+            }
+        } 
+    }
+}*/
