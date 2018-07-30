@@ -98,7 +98,7 @@ html, ::placeholder, body, div, span, applet, object, iframe, h1, h2, .site-titl
     padding-left: 450px;
   }
   body #page #content.site-content #primary.content-area main, body #page #content.site-content .navigation main, body #page #content.site-content .single-navigation main {
-    background-color: red;
+    background-color: lime;
   }
   body #page #content.site-content #primary.content-area main article.hentry, body #page #content.site-content .navigation main article.hentry, body #page #content.site-content .single-navigation main article.hentry {
     float: left;
