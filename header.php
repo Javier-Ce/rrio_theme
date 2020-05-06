@@ -60,7 +60,7 @@
 				?>
 				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
 			</div><!-- .site-branding -->
-		</header><!-- .site-header -->
+		9</header><!-- .site-header -->
 
 		<?php get_sidebar(); ?>
 	</div><!-- .sidebar -->
