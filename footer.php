@@ -5,8 +5,8 @@
  * Contains the closing of the "site-content" div and all content after.
  *
  * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @subpackage Twenty_Fifteen_Child
+ * @since Twenty Fifteen Child 1.0
  */
 ?>
 
@@ -22,14 +22,14 @@
 				 */
 				do_action( 'twentyfifteen_credits' );
 			?>
-			
-			<!-- <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> -->
 			<?php
-					wp_nav_menu( array(
-						'menu_class'     => 'contact-menu',
-						'theme_location' => 'contact_menu',
-					) );
+			if ( function_exists( 'the_privacy_policy_link' ) ) {
+				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
+			}
 			?>
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfifteen' ) ); ?>" class="imprint">
+				<?php //printf( __( 'Contact: %s', 'twentyfifteen-child' ), '' ); ?>
+			</a>
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer -->
 

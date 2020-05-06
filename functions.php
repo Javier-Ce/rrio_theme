@@ -1,43 +1,52 @@
 <?php
+
 function my_theme_enqueue_styles() {
 
-    $parent_style = 'twentyfifteen-style';
-    $firstchild_style = 'child-style';
-    $secondchild_style = 'secondchild-style';
+
+    $parent_style = 'twentyfifteen-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
 
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( $firstchild_style,
+    wp_enqueue_style( 'child-style',
         get_stylesheet_directory_uri() . '/style.css',
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
-    wp_enqueue_style( $secondchild_style,get_stylesheet_directory_uri() . '/second_style.css',array( $firstchild_style ) );
-    wp_enqueue_style( 'material-icons','https://fonts.googleapis.com/icon?family=Material+Icons',array( $secondchild_style ) );
-
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
-if ( ! function_exists( 'my_child_theme_setup' ) ) :
 
-function my_child_theme_setup() {
-    set_post_thumbnail_size();
-}
-endif; // my_child_theme_setup
-add_action( 'after_setup_theme', 'my_child_theme_setup',11 );
-
-
-
-add_action( 'init', 'register_my_menu' );
-function register_my_menu() {
-    register_nav_menu( 'contact_menu', __( 'Contact Menu' ) );
-}
-
+if ( ! function_exists( 'twentyfifteen_post_thumbnail' ) ) :
 /**
- * Custom template tags for this theme.
+ * Display an optional post thumbnail.
  *
- * @since Twenty Fifteen Child 1.0
+ * Wraps the post thumbnail in an anchor element on index views, or a div
+ * element when on single views.
+ *
+ * @since Twenty Fifteen 1.0
  */
-require get_stylesheet_directory() . '/inc/template-tags.php';
+function twentyfifteen_post_thumbnail() {
+	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+		return;
+	}
+
+	if ( is_singular() ) :
+	?>
+
+	<div class="post-thumbnail">
+		<?php the_post_thumbnail('large'); ?>
+	</div><!-- .post-thumbnail -->
+
+	<?php else : ?>
+
+	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+		<?php
+			the_post_thumbnail( 'medium', array( 'alt' => get_the_title() ) );
+		?>
+	</a>
+
+	<?php endif; // End is_singular()
+}
+endif;
 
 
 ?>

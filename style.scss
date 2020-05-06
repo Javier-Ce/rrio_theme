@@ -1,0 +1,346 @@
+/*
+ Theme Name:   Twenty Fifteen Child
+ Theme URI:    http://example.com/twenty-fourteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+
+/**
+ * 3.0 Typography
+ */
+$Tipo: "Helvetica-Neue", "Helvetica", sans-serif;
+$TipoColor:#000;
+$BackColor: transparent;
+@mixin fontsize($px,$rem) {
+	font-size: $px;
+	font-size: $rem;
+}
+@mixin Tipo($color) {
+	color:$color;
+	font-family: $Tipo;
+	@include fontsize(12px,1.2rem);
+	font-weight:400;
+	line-height: 1.5;
+	opacity:1;
+	a{ color:inherit;}
+	li{
+		list-style: none;
+	}
+}
+@mixin a_style_A($w,$h,$color) {
+	a{
+		border-radius: 25px;
+		height: $h;
+		width: $w;
+		}
+	& a::before{
+		background-color:$color;
+		height: $h;
+		line-height: $h;
+		width: $w;
+	}
+}
+
+
+body,
+button,
+input,
+select,
+textarea {
+	@include Tipo($TipoColor);
+}
+
+/**
+ * 6.2 Menus
+ */
+ nav.navigation.pagination{
+ 	.nav-links{
+ 		background-color:transparent;
+ 		@include a_style_A(40px,40px,$TipoColor);	
+ 	}
+ }
+.post-navigation{
+	.meta-nav,.post-title{
+		@include Tipo($TipoColor);
+	}
+}
+
+.posted-on {
+	text-transform: capitalize;
+}
+
+.posted-on:before, .cat-links:before, .tags-links:before, .edit-link:before {
+	content:"";
+}
+
+.tags-links a:before{
+	content:"#";
+}
+
+
+/**
+ * 12.1 Posts and pages
+ */
+ article{
+ 	clear: none;
+ 	float: left;
+ 	width: 33%;
+ }
+ .blog{
+ 	article.jander{
+ 		margin-left: 66% !important;
+ 	}
+ 	article.clander{
+ 		margin-left: 33% !important;
+ 	}
+ }
+
+
+ .entry-info{
+ 	position:absolute;
+ 	display: none;
+ }
+ .entry-title {
+	@include Tipo($TipoColor);
+	margin-bottom: 0;
+}
+.entry-content,
+.entry-summary,
+.page-content,
+.comment-content{
+	span,div,a,p,h1,h2,h3,h4,h5,h6
+	{@include Tipo($TipoColor);}
+}
+
+.entry-footer {
+	background-color: transparent;
+	span,a{
+		@include Tipo($TipoColor);
+	}
+}
+/**
+ * 13.0 Footer
+ */
+
+
+
+
+
+
+/**
+ * 16.0 Media Queries
+ */
+
+
+/**
+ * 16.1 Mobile Large 620px
+ */
+
+@media screen and (min-width: 38.75em) {
+	#primary.content-area{
+		//background-color:purple;
+	}
+}
+
+
+/**
+ * 16.2 Tablet Small 740px
+ */
+
+@media screen and (min-width: 46.25em) {
+	#primary.content-area{
+		//background-color:blue;
+	}
+}
+
+
+/**
+ * 16.3 Tablet Large 880px
+ */
+
+@media screen and (min-width: 55em) {
+	#primary.content-area{
+		//background-color:grey;
+	}
+}
+
+
+/**
+ * 16.4 Desktop Small 955px
+ */
+
+@media screen and (min-width: 59.6875em) {
+
+
+	body:before{
+		box-shadow:none;
+	}
+
+	.site-header, .sidebar aside{
+		margin-bottom:10%;
+	}
+	#primary.content-area{
+		//background-color:pink;
+	}
+
+	.blog{
+		article{
+			clear:none !important;
+			margin:0 !important;
+		}
+	}
+		
+
+	.hentry, .page-header, .page-content {
+		margin: 0 10%;
+	}
+	.sidebar{
+
+		p.site-description, .widget_polylang{@include Tipo($TipoColor);}
+		
+
+		
+		.widget-area{
+			#calendar_wrap{
+				@include Tipo($TipoColor);
+				text-transform:capitalize;
+				table,th,td{
+					border: 0;
+				}
+				td#next{
+					text-align:right;
+				}
+				td#prev{
+					text-align:left;
+				}
+				thead,tbody,tfoot{
+				}
+				thead{
+					display:none;
+				}
+				tbody{
+					background-color:$BackColor;
+					a{
+						font-weight:400;
+						background-color:rgba(0,0,0,0.15);
+					}
+				}
+				tbody::after{
+					content:"
+					";
+				}
+				caption{
+					@include Tipo($TipoColor); text-transform:capitalize;
+					margin-bottom:5%;
+					border-bottom: 0.5px solid #ccc;
+				}
+			}	
+		}
+	}
+	.site-content{
+		.page-header{
+			margin:0;
+			box-shadow: none;
+			border: none;
+			h1.page-title{
+				@include Tipo($TipoColor);
+			}
+		}
+	}
+	.site-footer{
+		box-shadow:none;
+		background-color:transparent;
+		.site-info{
+			@include Tipo($TipoColor);
+			padding: 8.3333% 0;
+		}
+	}
+
+	.blog,.date,.category,.tag{
+		article, nav{clear:both;}
+		article{
+			
+			box-shadow: none;
+			a.post-thumbnail{
+				with:auto; float:left;
+				img {
+					display:inline-block;
+					float:inherit;
+				}
+			}
+			.entry-header, .entry-content, .entry-footer{
+				padding:0;
+				float:left;
+				margin-left:5%;
+				width:30%;
+			}
+			.entry-footer span{
+				display:block;
+			}
+			.site-footer{
+				margin-left: 29.4118%;
+				width:70.5882%;
+			}
+		}
+		nav.navigation.pagination{
+			box-shadow:none;
+			text-align:left;
+			padding:0;
+			.nav-links {
+				background-color:transparent;
+				.page-numbers{
+					@include Tipo(white);
+				}
+			}
+		}
+
+	}
+	
+	
+}
+
+
+/**
+ * 16.5 Desktop Medium 1100px
+ */
+
+@media screen and (min-width: 68.75em) {
+	#primary.content-area{
+		//background-color:green;
+		.blog{
+			.entry-header, .entry-content, .entry-footer{ width:40%;}
+		}
+	}
+}
+
+
+/**
+ * 16.6 Desktop Large 1240px
+ */
+
+@media screen and (min-width: 77.5em) {
+	#primary.content-area{
+		//background-color:red;
+	}
+}
+
+
+/**
+ * 16.7 Desktop X-Large 1403px
+ */
+
+@media screen and (min-width: 87.6875em) {
+	#primary.content-area{
+		//background-color:yellow;
+	}
+}
+
+
+
