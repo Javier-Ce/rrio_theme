@@ -26,7 +26,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 
 	<div id="sidebar" class="sidebar">
-		<header id="masthead" class="site-header" role="banner">
+		<header id="masthead" class="site-header g" role="banner">
 			<div class="site-branding">
 				
 						
@@ -60,7 +60,7 @@
 				?>
 				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
 			</div><!-- .site-branding -->
-		9</header><!-- .site-header -->
+		</header><!-- .site-header -->
 
 		<?php get_sidebar(); ?>
 	</div><!-- .sidebar -->
