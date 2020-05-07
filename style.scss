@@ -23,15 +23,15 @@ $BackColor: transparent;
 	font-size: $rem;
 }
 @mixin Tipo($color) {
-	color:$color;
-	font-family: $Tipo;
-	@include fontsize(12px,1.2rem);
-	font-weight:400;
-	line-height: 1.5;
-	opacity:1;
+	//color:$color;
+	//font-family: $Tipo;
+	//@include fontsize(12px,1.2rem);
+	//font-weight:400;
+	//line-height: 1.5;
+	//opacity:1;
 	a{ color:inherit;}
 	li{
-		list-style: none;
+		//list-style: none;
 	}
 }
 @mixin a_style_A($w,$h,$color) {
@@ -62,7 +62,7 @@ textarea {
  */
  nav.navigation.pagination{
  	.nav-links{
- 		background-color:transparent;
+ 		//background-color:transparent;
  		@include a_style_A(40px,40px,$TipoColor);	
  	}
  }
@@ -73,7 +73,7 @@ textarea {
 }
 
 .posted-on {
-	text-transform: capitalize;
+	//text-transform: capitalize;
 }
 
 .posted-on:before, .cat-links:before, .tags-links:before, .edit-link:before {
@@ -91,7 +91,7 @@ textarea {
 
 
  .entry-info{
- 	position:absolute;
+ 	//position:absolute;
  	//display: none;
  }
  .entry-title {
@@ -196,24 +196,24 @@ textarea {
 				@include Tipo($TipoColor);
 				text-transform:capitalize;
 				table,th,td{
-					border: 0;
+					//border: 0;
 				}
 				td#next{
-					text-align:right;
+					//text-align:right;
 				}
 				td#prev{
-					text-align:left;
+					//text-align:left;
 				}
 				thead,tbody,tfoot{
 				}
 				thead{
-					display:none;
+					//display:none;
 				}
 				tbody{
 					background-color:$BackColor;
 					a{
-						font-weight:400;
-						background-color:rgba(0,0,0,0.15);
+						//font-weight:400;
+						//background-color:rgba(0,0,0,0.15);
 					}
 				}
 				tbody::after{
@@ -222,8 +222,8 @@ textarea {
 				}
 				caption{
 					@include Tipo($TipoColor); text-transform:capitalize;
-					margin-bottom:5%;
-					border-bottom: 0.5px solid #ccc;
+					//margin-bottom:5%;
+					//border-bottom: 0.5px solid #ccc;
 				}
 			}	
 		}

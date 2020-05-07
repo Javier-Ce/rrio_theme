@@ -14,61 +14,29 @@
 /**
  * 3.0 Typography
  */
-body,
-button,
-input,
-select,
-textarea {
-  color: #000;
-  font-family: "Helvetica-Neue", "Helvetica", sans-serif;
-  font-size: 12px;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  opacity: 1; }
-  body a,
-  button a,
-  input a,
-  select a,
-  textarea a {
-    color: inherit; }
-  body li,
-  button li,
-  input li,
-  select li,
-  textarea li {
-    list-style: none; }
+body a,
+button a,
+input a,
+select a,
+textarea a {
+  color: inherit; }
 
 /**
  * 6.2 Menus
  */
-nav.navigation.pagination .nav-links {
-  background-color: transparent; }
-  nav.navigation.pagination .nav-links a {
-    border-radius: 25px;
-    height: 40px;
-    width: 40px; }
-  nav.navigation.pagination .nav-links a::before {
-    background-color: #000;
-    height: 40px;
-    line-height: 40px;
-    width: 40px; }
+nav.navigation.pagination .nav-links a {
+  border-radius: 25px;
+  height: 40px;
+  width: 40px; }
 
-.post-navigation .meta-nav, .post-navigation .post-title {
-  color: #000;
-  font-family: "Helvetica-Neue", "Helvetica", sans-serif;
-  font-size: 12px;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  opacity: 1; }
-  .post-navigation .meta-nav a, .post-navigation .post-title a {
-    color: inherit; }
-  .post-navigation .meta-nav li, .post-navigation .post-title li {
-    list-style: none; }
+nav.navigation.pagination .nav-links a::before {
+  background-color: #000;
+  height: 40px;
+  line-height: 40px;
+  width: 40px; }
 
-.posted-on {
-  text-transform: capitalize; }
+.post-navigation .meta-nav a, .post-navigation .post-title a {
+  color: inherit; }
 
 .posted-on:before, .cat-links:before, .tags-links:before, .edit-link:before {
   content: ""; }
@@ -79,137 +47,44 @@ nav.navigation.pagination .nav-links {
 /**
  * 12.1 Posts and pages
  */
-.entry-info {
-  position: absolute; }
+.entry-title a {
+  color: inherit; }
 
-.entry-title {
-  color: #000;
-  font-family: "Helvetica-Neue", "Helvetica", sans-serif;
-  font-size: 12px;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  opacity: 1; }
-  .entry-title a {
-    color: inherit; }
-  .entry-title li {
-    list-style: none; }
+.entry-content span a, .entry-content div a, .entry-content a a, .entry-content p a, .entry-content h1 a, .entry-content h2 a, .entry-content h3 a, .entry-content h4 a, .entry-content h5 a, .entry-content h6 a,
+.entry-summary span a,
+.entry-summary div a,
+.entry-summary a a,
+.entry-summary p a,
+.entry-summary h1 a,
+.entry-summary h2 a,
+.entry-summary h3 a,
+.entry-summary h4 a,
+.entry-summary h5 a,
+.entry-summary h6 a,
+.page-content span a,
+.page-content div a,
+.page-content a a,
+.page-content p a,
+.page-content h1 a,
+.page-content h2 a,
+.page-content h3 a,
+.page-content h4 a,
+.page-content h5 a,
+.page-content h6 a,
+.comment-content span a,
+.comment-content div a,
+.comment-content a a,
+.comment-content p a,
+.comment-content h1 a,
+.comment-content h2 a,
+.comment-content h3 a,
+.comment-content h4 a,
+.comment-content h5 a,
+.comment-content h6 a {
+  color: inherit; }
 
-.entry-content span, .entry-content div, .entry-content a, .entry-content p, .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6,
-.entry-summary span,
-.entry-summary div,
-.entry-summary a,
-.entry-summary p,
-.entry-summary h1,
-.entry-summary h2,
-.entry-summary h3,
-.entry-summary h4,
-.entry-summary h5,
-.entry-summary h6,
-.page-content span,
-.page-content div,
-.page-content a,
-.page-content p,
-.page-content h1,
-.page-content h2,
-.page-content h3,
-.page-content h4,
-.page-content h5,
-.page-content h6,
-.comment-content span,
-.comment-content div,
-.comment-content a,
-.comment-content p,
-.comment-content h1,
-.comment-content h2,
-.comment-content h3,
-.comment-content h4,
-.comment-content h5,
-.comment-content h6 {
-  color: #000;
-  font-family: "Helvetica-Neue", "Helvetica", sans-serif;
-  font-size: 12px;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  opacity: 1; }
-  .entry-content span a, .entry-content div a, .entry-content a a, .entry-content p a, .entry-content h1 a, .entry-content h2 a, .entry-content h3 a, .entry-content h4 a, .entry-content h5 a, .entry-content h6 a,
-  .entry-summary span a,
-  .entry-summary div a,
-  .entry-summary a a,
-  .entry-summary p a,
-  .entry-summary h1 a,
-  .entry-summary h2 a,
-  .entry-summary h3 a,
-  .entry-summary h4 a,
-  .entry-summary h5 a,
-  .entry-summary h6 a,
-  .page-content span a,
-  .page-content div a,
-  .page-content a a,
-  .page-content p a,
-  .page-content h1 a,
-  .page-content h2 a,
-  .page-content h3 a,
-  .page-content h4 a,
-  .page-content h5 a,
-  .page-content h6 a,
-  .comment-content span a,
-  .comment-content div a,
-  .comment-content a a,
-  .comment-content p a,
-  .comment-content h1 a,
-  .comment-content h2 a,
-  .comment-content h3 a,
-  .comment-content h4 a,
-  .comment-content h5 a,
-  .comment-content h6 a {
-    color: inherit; }
-  .entry-content span li, .entry-content div li, .entry-content a li, .entry-content p li, .entry-content h1 li, .entry-content h2 li, .entry-content h3 li, .entry-content h4 li, .entry-content h5 li, .entry-content h6 li,
-  .entry-summary span li,
-  .entry-summary div li,
-  .entry-summary a li,
-  .entry-summary p li,
-  .entry-summary h1 li,
-  .entry-summary h2 li,
-  .entry-summary h3 li,
-  .entry-summary h4 li,
-  .entry-summary h5 li,
-  .entry-summary h6 li,
-  .page-content span li,
-  .page-content div li,
-  .page-content a li,
-  .page-content p li,
-  .page-content h1 li,
-  .page-content h2 li,
-  .page-content h3 li,
-  .page-content h4 li,
-  .page-content h5 li,
-  .page-content h6 li,
-  .comment-content span li,
-  .comment-content div li,
-  .comment-content a li,
-  .comment-content p li,
-  .comment-content h1 li,
-  .comment-content h2 li,
-  .comment-content h3 li,
-  .comment-content h4 li,
-  .comment-content h5 li,
-  .comment-content h6 li {
-    list-style: none; }
-
-.entry-footer span, .entry-footer a {
-  color: #000;
-  font-family: "Helvetica-Neue", "Helvetica", sans-serif;
-  font-size: 12px;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  opacity: 1; }
-  .entry-footer span a, .entry-footer a a {
-    color: inherit; }
-  .entry-footer span li, .entry-footer a li {
-    list-style: none; }
+.entry-footer span a, .entry-footer a a {
+  color: inherit; }
 
 /**
  * 13.0 Footer
@@ -230,89 +105,28 @@ nav.navigation.pagination .nav-links {
  * 16.4 Desktop Small 955px
  */
 @media screen and (min-width: 59.6875em) {
-  .sidebar p.site-description, .sidebar .widget_polylang {
-    color: #000;
-    font-family: "Helvetica-Neue", "Helvetica", sans-serif;
-    font-size: 12px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.5;
-    opacity: 1; }
-    .sidebar p.site-description a, .sidebar .widget_polylang a {
-      color: inherit; }
-    .sidebar p.site-description li, .sidebar .widget_polylang li {
-      list-style: none; }
+  .sidebar p.site-description a, .sidebar .widget_polylang a {
+    color: inherit; }
   .sidebar .widget-area #calendar_wrap {
-    color: #000;
-    font-family: "Helvetica-Neue", "Helvetica", sans-serif;
-    font-size: 12px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.5;
-    opacity: 1;
     text-transform: capitalize; }
     .sidebar .widget-area #calendar_wrap a {
       color: inherit; }
-    .sidebar .widget-area #calendar_wrap li {
-      list-style: none; }
-    .sidebar .widget-area #calendar_wrap table, .sidebar .widget-area #calendar_wrap th, .sidebar .widget-area #calendar_wrap td {
-      border: 0; }
-    .sidebar .widget-area #calendar_wrap td#next {
-      text-align: right; }
-    .sidebar .widget-area #calendar_wrap td#prev {
-      text-align: left; }
-    .sidebar .widget-area #calendar_wrap thead {
-      display: none; }
     .sidebar .widget-area #calendar_wrap tbody {
       background-color: transparent; }
-      .sidebar .widget-area #calendar_wrap tbody a {
-        font-weight: 400;
-        background-color: rgba(0, 0, 0, 0.15); }
     .sidebar .widget-area #calendar_wrap tbody::after {
       content: " "; }
     .sidebar .widget-area #calendar_wrap caption {
-      color: #000;
-      font-family: "Helvetica-Neue", "Helvetica", sans-serif;
-      font-size: 12px;
-      font-size: 1.2rem;
-      font-weight: 400;
-      line-height: 1.5;
-      opacity: 1;
-      text-transform: capitalize;
-      margin-bottom: 5%;
-      border-bottom: 0.5px solid #ccc; }
+      text-transform: capitalize; }
       .sidebar .widget-area #calendar_wrap caption a {
         color: inherit; }
-      .sidebar .widget-area #calendar_wrap caption li {
-        list-style: none; }
   .site-content .page-header {
     margin: 0; }
-    .site-content .page-header h1.page-title {
-      color: #000;
-      font-family: "Helvetica-Neue", "Helvetica", sans-serif;
-      font-size: 12px;
-      font-size: 1.2rem;
-      font-weight: 400;
-      line-height: 1.5;
-      opacity: 1; }
-      .site-content .page-header h1.page-title a {
-        color: inherit; }
-      .site-content .page-header h1.page-title li {
-        list-style: none; }
+    .site-content .page-header h1.page-title a {
+      color: inherit; }
   .site-footer {
     background-color: transparent; }
-    .site-footer .site-info {
-      color: #000;
-      font-family: "Helvetica-Neue", "Helvetica", sans-serif;
-      font-size: 12px;
-      font-size: 1.2rem;
-      font-weight: 400;
-      line-height: 1.5;
-      opacity: 1; }
-      .site-footer .site-info a {
-        color: inherit; }
-      .site-footer .site-info li {
-        list-style: none; }
+    .site-footer .site-info a {
+      color: inherit; }
   .blog, .date, .category, .tag {
     /*
 		article, nav{clear:both;}
