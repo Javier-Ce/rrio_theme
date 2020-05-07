@@ -79,17 +79,6 @@ nav.navigation.pagination .nav-links {
 /**
  * 12.1 Posts and pages
  */
-article {
-  clear: none;
-  float: left;
-  width: 33%; }
-
-.blog article.jander {
-  margin-left: 66% !important; }
-
-.blog article.clander {
-  margin-left: 33% !important; }
-
 .entry-info {
   position: absolute;
   display: none; }
