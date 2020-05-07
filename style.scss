@@ -92,11 +92,11 @@ textarea {
 
  .entry-info{
  	position:absolute;
- 	display: none;
+ 	//display: none;
  }
  .entry-title {
 	@include Tipo($TipoColor);
-	margin-bottom: 0;
+	//margin-bottom: 0;
 }
 .entry-content,
 .entry-summary,
@@ -107,7 +107,7 @@ textarea {
 }
 
 .entry-footer {
-	background-color: transparent;
+	//background-color: transparent;
 	span,a{
 		@include Tipo($TipoColor);
 	}
@@ -115,9 +115,6 @@ textarea {
 /**
  * 13.0 Footer
  */
-
-
-
 
 
 
@@ -167,11 +164,11 @@ textarea {
 
 
 	body:before{
-		box-shadow:none;
+		//box-shadow:none;
 	}
 
 	.site-header, .sidebar aside{
-		margin-bottom:10%;
+		//margin-bottom:10%;
 	}
 	#primary.content-area{
 		//background-color:pink;
@@ -179,14 +176,14 @@ textarea {
 
 	.blog{
 		article{
-			clear:none !important;
-			margin:0 !important;
+			//clear:none !important;
+			//margin:0 !important;
 		}
 	}
 		
 
 	.hentry, .page-header, .page-content {
-		margin: 0 10%;
+		//margin: 0 10%;
 	}
 	.sidebar{
 
@@ -234,23 +231,24 @@ textarea {
 	.site-content{
 		.page-header{
 			margin:0;
-			box-shadow: none;
-			border: none;
+			//box-shadow: none;
+			//border: none;
 			h1.page-title{
 				@include Tipo($TipoColor);
 			}
 		}
 	}
 	.site-footer{
-		box-shadow:none;
+		//box-shadow:none;
 		background-color:transparent;
 		.site-info{
 			@include Tipo($TipoColor);
-			padding: 8.3333% 0;
+			//padding: 8.3333% 0;
 		}
 	}
 
 	.blog,.date,.category,.tag{
+		/*
 		article, nav{clear:both;}
 		article{
 			
@@ -287,6 +285,7 @@ textarea {
 				}
 			}
 		}
+		*/
 
 	}
 	
@@ -302,7 +301,7 @@ textarea {
 	#primary.content-area{
 		//background-color:green;
 		.blog{
-			.entry-header, .entry-content, .entry-footer{ width:40%;}
+			//.entry-header, .entry-content, .entry-footer{ width:40%;}
 		}
 	}
 }

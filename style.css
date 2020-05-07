@@ -80,8 +80,7 @@ nav.navigation.pagination .nav-links {
  * 12.1 Posts and pages
  */
 .entry-info {
-  position: absolute;
-  display: none; }
+  position: absolute; }
 
 .entry-title {
   color: #000;
@@ -90,8 +89,7 @@ nav.navigation.pagination .nav-links {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5;
-  opacity: 1;
-  margin-bottom: 0; }
+  opacity: 1; }
   .entry-title a {
     color: inherit; }
   .entry-title li {
@@ -200,20 +198,18 @@ nav.navigation.pagination .nav-links {
   .comment-content h6 li {
     list-style: none; }
 
-.entry-footer {
-  background-color: transparent; }
-  .entry-footer span, .entry-footer a {
-    color: #000;
-    font-family: "Helvetica-Neue", "Helvetica", sans-serif;
-    font-size: 12px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.5;
-    opacity: 1; }
-    .entry-footer span a, .entry-footer a a {
-      color: inherit; }
-    .entry-footer span li, .entry-footer a li {
-      list-style: none; }
+.entry-footer span, .entry-footer a {
+  color: #000;
+  font-family: "Helvetica-Neue", "Helvetica", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 1; }
+  .entry-footer span a, .entry-footer a a {
+    color: inherit; }
+  .entry-footer span li, .entry-footer a li {
+    list-style: none; }
 
 /**
  * 13.0 Footer
@@ -234,15 +230,6 @@ nav.navigation.pagination .nav-links {
  * 16.4 Desktop Small 955px
  */
 @media screen and (min-width: 59.6875em) {
-  body:before {
-    box-shadow: none; }
-  .site-header, .sidebar aside {
-    margin-bottom: 10%; }
-  .blog article {
-    clear: none !important;
-    margin: 0 !important; }
-  .hentry, .page-header, .page-content {
-    margin: 0 10%; }
   .sidebar p.site-description, .sidebar .widget_polylang {
     color: #000;
     font-family: "Helvetica-Neue", "Helvetica", sans-serif;
@@ -299,9 +286,7 @@ nav.navigation.pagination .nav-links {
       .sidebar .widget-area #calendar_wrap caption li {
         list-style: none; }
   .site-content .page-header {
-    margin: 0;
-    box-shadow: none;
-    border: none; }
+    margin: 0; }
     .site-content .page-header h1.page-title {
       color: #000;
       font-family: "Helvetica-Neue", "Helvetica", sans-serif;
@@ -315,7 +300,6 @@ nav.navigation.pagination .nav-links {
       .site-content .page-header h1.page-title li {
         list-style: none; }
   .site-footer {
-    box-shadow: none;
     background-color: transparent; }
     .site-footer .site-info {
       color: #000;
@@ -324,58 +308,54 @@ nav.navigation.pagination .nav-links {
       font-size: 1.2rem;
       font-weight: 400;
       line-height: 1.5;
-      opacity: 1;
-      padding: 8.3333% 0; }
+      opacity: 1; }
       .site-footer .site-info a {
         color: inherit; }
       .site-footer .site-info li {
         list-style: none; }
-  .blog article, .blog nav, .date article, .date nav, .category article, .category nav, .tag article, .tag nav {
-    clear: both; }
-  .blog article, .date article, .category article, .tag article {
-    box-shadow: none; }
-    .blog article a.post-thumbnail, .date article a.post-thumbnail, .category article a.post-thumbnail, .tag article a.post-thumbnail {
-      with: auto;
-      float: left; }
-      .blog article a.post-thumbnail img, .date article a.post-thumbnail img, .category article a.post-thumbnail img, .tag article a.post-thumbnail img {
-        display: inline-block;
-        float: inherit; }
-    .blog article .entry-header, .blog article .entry-content, .blog article .entry-footer, .date article .entry-header, .date article .entry-content, .date article .entry-footer, .category article .entry-header, .category article .entry-content, .category article .entry-footer, .tag article .entry-header, .tag article .entry-content, .tag article .entry-footer {
-      padding: 0;
-      float: left;
-      margin-left: 5%;
-      width: 30%; }
-    .blog article .entry-footer span, .date article .entry-footer span, .category article .entry-footer span, .tag article .entry-footer span {
-      display: block; }
-    .blog article .site-footer, .date article .site-footer, .category article .site-footer, .tag article .site-footer {
-      margin-left: 29.4118%;
-      width: 70.5882%; }
-  .blog nav.navigation.pagination, .date nav.navigation.pagination, .category nav.navigation.pagination, .tag nav.navigation.pagination {
-    box-shadow: none;
-    text-align: left;
-    padding: 0; }
-    .blog nav.navigation.pagination .nav-links, .date nav.navigation.pagination .nav-links, .category nav.navigation.pagination .nav-links, .tag nav.navigation.pagination .nav-links {
-      background-color: transparent; }
-      .blog nav.navigation.pagination .nav-links .page-numbers, .date nav.navigation.pagination .nav-links .page-numbers, .category nav.navigation.pagination .nav-links .page-numbers, .tag nav.navigation.pagination .nav-links .page-numbers {
-        color: white;
-        font-family: "Helvetica-Neue", "Helvetica", sans-serif;
-        font-size: 12px;
-        font-size: 1.2rem;
-        font-weight: 400;
-        line-height: 1.5;
-        opacity: 1; }
-        .blog nav.navigation.pagination .nav-links .page-numbers a, .date nav.navigation.pagination .nav-links .page-numbers a, .category nav.navigation.pagination .nav-links .page-numbers a, .tag nav.navigation.pagination .nav-links .page-numbers a {
-          color: inherit; }
-        .blog nav.navigation.pagination .nav-links .page-numbers li, .date nav.navigation.pagination .nav-links .page-numbers li, .category nav.navigation.pagination .nav-links .page-numbers li, .tag nav.navigation.pagination .nav-links .page-numbers li {
-          list-style: none; } }
+  .blog, .date, .category, .tag {
+    /*
+		article, nav{clear:both;}
+		article{
+			
+			box-shadow: none;
+			a.post-thumbnail{
+				with:auto; float:left;
+				img {
+					display:inline-block;
+					float:inherit;
+				}
+			}
+			.entry-header, .entry-content, .entry-footer{
+				padding:0;
+				float:left;
+				margin-left:5%;
+				width:30%;
+			}
+			.entry-footer span{
+				display:block;
+			}
+			.site-footer{
+				margin-left: 29.4118%;
+				width:70.5882%;
+			}
+		}
+		nav.navigation.pagination{
+			box-shadow:none;
+			text-align:left;
+			padding:0;
+			.nav-links {
+				background-color:transparent;
+				.page-numbers{
+					@include Tipo(white);
+				}
+			}
+		}
+		*/ } }
 
 /**
  * 16.5 Desktop Medium 1100px
  */
-@media screen and (min-width: 68.75em) {
-  #primary.content-area .blog .entry-header, #primary.content-area .blog .entry-content, #primary.content-area .blog .entry-footer {
-    width: 40%; } }
-
 /**
  * 16.6 Desktop Large 1240px
  */
