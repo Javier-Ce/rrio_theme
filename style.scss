@@ -16,7 +16,7 @@
  * 3.0 Typography
  */
 $Tipo: "Helvetica-Neue", "Helvetica", sans-serif;
-$TipoColor:greylight;
+$TipoColor:#999;
 $BackColor: transparent;
 @mixin fontsize($px,$rem) {
 	font-size: $px;
@@ -132,8 +132,21 @@ textarea {
 
 @media screen and (min-width: 38.75em) {
 
+
+	.site{
+		max-width: none;
+	}
+	.sidebar,.site-content{
+		background-color:transparent;
+	}
+	.site-content{
+		padding: 0 5%;
+	}
+
+
 	.hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content{
 		@include Margins();
+		background-color:transparent;;
 	}
 	.hentry:first-child{
 		float: none;
@@ -175,7 +188,11 @@ textarea {
 
 
 	body:before{
-		//box-shadow:none;
+		box-shadow:none;
+		background-color:transparent;
+	}
+	.sidebar{
+		max-width: none;
 	}
 
 	.site-header, .sidebar aside{
@@ -273,7 +290,7 @@ textarea {
 			h2{
 				margin-bottom: 0;
 				font-size: 2.9rem;
-				font-weight: normal;
+				font-weight: lighter;
 			}
 			.entry-header, .entry-content, .entry-footer{
 				padding:0;
