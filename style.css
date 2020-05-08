@@ -149,6 +149,8 @@ nav.navigation.pagination .nav-links a::before {
     max-width: none; }
   .sidebar, .site-content {
     background-color: transparent; }
+    .sidebar .custom-logo, .site-content .custom-logo {
+      width: 80px; }
   .site-content {
     padding: 0 5%; }
   .hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content {
