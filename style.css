@@ -157,7 +157,9 @@ nav.navigation.pagination .nav-links a::before {
     margin: 0 5% 5% 5% !important;
     background-color: transparent; }
   .hentry:first-child {
-    float: none; } }
+    float: none;
+    border-bottom: 1px solid;
+    padding-bottom: 5%; } }
 
 /**
  * 16.2 Tablet Small 740px
