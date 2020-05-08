@@ -172,13 +172,17 @@ nav.navigation.pagination .nav-links a::before {
     max-width: none; }
     .site .sidebar, .site .site-content, .site .site-footer {
       background-color: transparent; }
-    .site .sidebar .custom-logo {
+    .site .sidebar .site-header .custom-logo {
       width: 80px; }
-    .site .sidebar p.site-description {
+    .site .sidebar .site-header p.site-description {
       color: #999;
       font-family: "Helvetica-Neue", "Helvetica", sans-serif; }
-      .site .sidebar p.site-description a {
+      .site .sidebar .site-header p.site-description a {
         color: inherit; }
+    .site .sidebar .site-header, .site .sidebar .widget {
+      margin-bottom: 5%; }
+    .site .sidebar .widget-area .widget-title {
+      margin-bottom: 2%; }
     .site .sidebar .widget-area #calendar_wrap {
       color: #999;
       font-family: "Helvetica-Neue", "Helvetica", sans-serif; }
@@ -186,6 +190,8 @@ nav.navigation.pagination .nav-links a::before {
         color: inherit; }
       .site .sidebar .widget-area #calendar_wrap table, .site .sidebar .widget-area #calendar_wrap th, .site .sidebar .widget-area #calendar_wrap td {
         border: none; }
+      .site .sidebar .widget-area #calendar_wrap thead {
+        display: none; }
       .site .sidebar .widget-area #calendar_wrap tbody {
         background-color: transparent; }
       .site .sidebar .widget-area #calendar_wrap tbody::after {

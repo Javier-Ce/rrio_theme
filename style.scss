@@ -131,11 +131,17 @@ textarea {
 		.sidebar,.site-content,.site-footer{ background-color:transparent;}
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		.sidebar{
-			.custom-logo{ width: 80px;}
-			p.site-description{
-				@include Tipo($TipoColor);
+			.site-header{
+				.custom-logo{ width: 80px;}
+				p.site-description{
+					@include Tipo($TipoColor);
+				}
+			}
+			.site-header,.widget{
+				margin-bottom: 5%;
 			}
 			.widget-area{
+				.widget-title{ margin-bottom: 2%; }
 				#calendar_wrap{
 					@include Tipo($TipoColor);
 					//text-transform:capitalize;
@@ -149,9 +155,7 @@ textarea {
 						//text-align:left;
 					}
 					thead,tbody,tfoot{}
-					thead{
-						//display:none;
-					}
+					thead{ display:none;}
 					tbody{
 						background-color:$BackColor;
 						a{
