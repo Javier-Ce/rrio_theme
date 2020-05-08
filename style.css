@@ -19,7 +19,7 @@ button,
 input,
 select,
 textarea {
-  color: #000;
+  color: greylight;
   font-family: "Helvetica-Neue", "Helvetica", sans-serif; }
   body a,
   button a,
@@ -37,13 +37,13 @@ nav.navigation.pagination .nav-links a {
   width: 40px; }
 
 nav.navigation.pagination .nav-links a::before {
-  background-color: #000;
+  background-color: greylight;
   height: 40px;
   line-height: 40px;
   width: 40px; }
 
 .post-navigation .meta-nav, .post-navigation .post-title {
-  color: #000;
+  color: greylight;
   font-family: "Helvetica-Neue", "Helvetica", sans-serif; }
   .post-navigation .meta-nav a, .post-navigation .post-title a {
     color: inherit; }
@@ -58,7 +58,7 @@ nav.navigation.pagination .nav-links a::before {
  * 12.1 Posts and pages
  */
 .entry-title {
-  color: #000;
+  color: greylight;
   font-family: "Helvetica-Neue", "Helvetica", sans-serif; }
   .entry-title a {
     color: inherit; }
@@ -94,7 +94,7 @@ nav.navigation.pagination .nav-links a::before {
 .comment-content h4,
 .comment-content h5,
 .comment-content h6 {
-  color: #000;
+  color: greylight;
   font-family: "Helvetica-Neue", "Helvetica", sans-serif; }
   .entry-content span a, .entry-content div a, .entry-content a a, .entry-content p a, .entry-content h1 a, .entry-content h2 a, .entry-content h3 a, .entry-content h4 a, .entry-content h5 a, .entry-content h6 a,
   .entry-summary span a,
@@ -130,7 +130,7 @@ nav.navigation.pagination .nav-links a::before {
     color: inherit; }
 
 .entry-footer span, .entry-footer a {
-  color: #000;
+  color: greylight;
   font-family: "Helvetica-Neue", "Helvetica", sans-serif; }
   .entry-footer span a, .entry-footer a a {
     color: inherit; }
@@ -144,6 +144,12 @@ nav.navigation.pagination .nav-links a::before {
 /**
  * 16.1 Mobile Large 620px
  */
+@media screen and (min-width: 38.75em) {
+  .hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content {
+    margin: 0 5% 5% 5% !important; }
+  .hentry:first-child {
+    float: none; } }
+
 /**
  * 16.2 Tablet Small 740px
  */
@@ -154,13 +160,15 @@ nav.navigation.pagination .nav-links a::before {
  * 16.4 Desktop Small 955px
  */
 @media screen and (min-width: 59.6875em) {
+  .hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content {
+    margin: 0 5% 5% 5% !important; }
   .sidebar p.site-description, .sidebar .widget_polylang {
-    color: #000;
+    color: greylight;
     font-family: "Helvetica-Neue", "Helvetica", sans-serif; }
     .sidebar p.site-description a, .sidebar .widget_polylang a {
       color: inherit; }
   .sidebar .widget-area #calendar_wrap {
-    color: #000;
+    color: greylight;
     font-family: "Helvetica-Neue", "Helvetica", sans-serif;
     text-transform: capitalize; }
     .sidebar .widget-area #calendar_wrap a {
@@ -170,7 +178,7 @@ nav.navigation.pagination .nav-links a::before {
     .sidebar .widget-area #calendar_wrap tbody::after {
       content: " "; }
     .sidebar .widget-area #calendar_wrap caption {
-      color: #000;
+      color: greylight;
       font-family: "Helvetica-Neue", "Helvetica", sans-serif;
       text-transform: capitalize; }
       .sidebar .widget-area #calendar_wrap caption a {
@@ -178,44 +186,19 @@ nav.navigation.pagination .nav-links a::before {
   .site-content .page-header {
     margin: 0; }
     .site-content .page-header h1.page-title {
-      color: #000;
+      color: greylight;
       font-family: "Helvetica-Neue", "Helvetica", sans-serif; }
       .site-content .page-header h1.page-title a {
         color: inherit; }
   .site-footer {
     background-color: transparent; }
     .site-footer .site-info {
-      color: #000;
+      color: greylight;
       font-family: "Helvetica-Neue", "Helvetica", sans-serif; }
       .site-footer .site-info a {
         color: inherit; }
   .blog, .date, .category, .tag {
     /*
-		article, nav{clear:both;}
-		article{
-			
-			box-shadow: none;
-			a.post-thumbnail{
-				with:auto; float:left;
-				img {
-					display:inline-block;
-					float:inherit;
-				}
-			}
-			.entry-header, .entry-content, .entry-footer{
-				padding:0;
-				float:left;
-				margin-left:5%;
-				width:30%;
-			}
-			.entry-footer span{
-				display:block;
-			}
-			.site-footer{
-				margin-left: 29.4118%;
-				width:70.5882%;
-			}
-		}
 		nav.navigation.pagination{
 			box-shadow:none;
 			text-align:left;
@@ -227,7 +210,27 @@ nav.navigation.pagination .nav-links a::before {
 				}
 			}
 		}
-		*/ } }
+		*/ }
+    .blog article, .date article, .category article, .tag article {
+      float: left;
+      box-shadow: none; }
+      .blog article a.post-thumbnail, .date article a.post-thumbnail, .category article a.post-thumbnail, .tag article a.post-thumbnail {
+        margin-bottom: 5%; }
+        .blog article a.post-thumbnail img, .date article a.post-thumbnail img, .category article a.post-thumbnail img, .tag article a.post-thumbnail img {
+          margin: 0; }
+      .blog article h2, .date article h2, .category article h2, .tag article h2 {
+        margin-bottom: 0;
+        font-size: 2.9rem;
+        font-weight: normal; }
+      .blog article .entry-header, .blog article .entry-content, .blog article .entry-footer, .date article .entry-header, .date article .entry-content, .date article .entry-footer, .category article .entry-header, .category article .entry-content, .category article .entry-footer, .tag article .entry-header, .tag article .entry-content, .tag article .entry-footer {
+        padding: 0; }
+      .blog article .entry-footer, .date article .entry-footer, .category article .entry-footer, .tag article .entry-footer {
+        background-color: transparent; }
+        .blog article .entry-footer span, .date article .entry-footer span, .category article .entry-footer span, .tag article .entry-footer span {
+          display: block; }
+      .blog article .site-footer, .date article .site-footer, .category article .site-footer, .tag article .site-footer {
+        margin-left: 29.4118%;
+        width: 70.5882%; } }
 
 /**
  * 16.5 Desktop Medium 1100px

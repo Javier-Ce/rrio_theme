@@ -16,7 +16,7 @@
  * 3.0 Typography
  */
 $Tipo: "Helvetica-Neue", "Helvetica", sans-serif;
-$TipoColor:#000;
+$TipoColor:greylight;
 $BackColor: transparent;
 @mixin fontsize($px,$rem) {
 	font-size: $px;
@@ -46,6 +46,9 @@ $BackColor: transparent;
 		line-height: $h;
 		width: $w;
 	}
+}
+@mixin Margins(){
+	margin: 0 5% 5% 5% !important;
 }
 
 
@@ -128,6 +131,14 @@ textarea {
  */
 
 @media screen and (min-width: 38.75em) {
+
+	.hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content{
+		@include Margins();
+	}
+	.hentry:first-child{
+		float: none;
+	}
+
 	#primary.content-area{
 		//background-color:purple;
 	}
@@ -180,7 +191,10 @@ textarea {
 			//margin:0 !important;
 		}
 	}
-		
+	
+	.hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content{
+		@include Margins();
+	}
 
 	.hentry, .page-header, .page-content {
 		//margin: 0 10%;
@@ -248,32 +262,34 @@ textarea {
 	}
 
 	.blog,.date,.category,.tag{
-		/*
-		article, nav{clear:both;}
+		
 		article{
-			
+			float: left;
 			box-shadow: none;
 			a.post-thumbnail{
-				with:auto; float:left;
-				img {
-					display:inline-block;
-					float:inherit;
-				}
+				img{margin:0;}
+				margin-bottom: 5%;
+			}
+			h2{
+				margin-bottom: 0;
+				font-size: 2.9rem;
+				font-weight: normal;
 			}
 			.entry-header, .entry-content, .entry-footer{
 				padding:0;
-				float:left;
-				margin-left:5%;
-				width:30%;
 			}
-			.entry-footer span{
-				display:block;
+			.entry-footer{
+				background-color:transparent;
+				span{
+					display:block;
+				}
 			}
 			.site-footer{
 				margin-left: 29.4118%;
 				width:70.5882%;
 			}
 		}
+		/*
 		nav.navigation.pagination{
 			box-shadow:none;
 			text-align:left;
