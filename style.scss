@@ -86,13 +86,9 @@ textarea {
 .tags-links a:before{
 	content:"#";
 }
-
-
 /**
  * 12.1 Posts and pages
  */
-
-
  .entry-info{
  	//position:absolute;
  	//display: none;
@@ -104,6 +100,7 @@ textarea {
 .entry-content,
 .entry-summary,
 .page-content,
+.site-content,
 .comment-content{
 	span,div,a,p,h1,h2,h3,h4,h5,h6
 	{@include Tipo($TipoColor);}
@@ -118,252 +115,146 @@ textarea {
 /**
  * 13.0 Footer
  */
-
-
-
 /**
  * 16.0 Media Queries
  */
-
-
 /**
  * 16.1 Mobile Large 620px
  */
-
 @media screen and (min-width: 38.75em) {
-
-
-	.site{
-		max-width: none;
-	}
-	.sidebar,.site-content{
-		background-color:transparent;
-		.custom-logo{
-			width: 80px;
-		}
-	}
-	.site-content{
-		padding: 0 5%;
-	}
-
-
-	.hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content{
-		@include Margins();
-		background-color:transparent;;
-	}
-	.hentry:first-child{
-		float: none;
-		border-bottom: 1px solid;
-    	padding-bottom: 5%;
-	}
-
-	#primary.content-area{
-		//background-color:purple;
-	}
-}
-
-
-/**
- * 16.2 Tablet Small 740px
- */
-
-@media screen and (min-width: 46.25em) {
-	#primary.content-area{
-		//background-color:blue;
-	}
-}
-
-
-/**
- * 16.3 Tablet Large 880px
- */
-
-@media screen and (min-width: 55em) {
-	#primary.content-area{
-		//background-color:grey;
-	}
-}
-
-
-/**
- * 16.4 Desktop Small 955px
- */
-
-@media screen and (min-width: 59.6875em) {
-
-
 	body:before{
 		box-shadow:none;
 		background-color:transparent;
 	}
-	.sidebar{
+	.site{
 		max-width: none;
-	}
-
-	.site-header, .sidebar aside{
-		//margin-bottom:10%;
-	}
-	#primary.content-area{
-		//background-color:pink;
-	}
-
-	.blog{
-		article{
-			//clear:none !important;
-			//margin:0 !important;
-		}
-	}
-	
-	.hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content{
-		@include Margins();
-	}
-
-	.hentry, .page-header, .page-content {
-		//margin: 0 10%;
-	}
-	.sidebar{
-
-		p.site-description, .widget_polylang{@include Tipo($TipoColor);}
-		
-
-		
-		.widget-area{
-			#calendar_wrap{
+		.sidebar,.site-content,.site-footer{ background-color:transparent;}
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		.sidebar{
+			.custom-logo{ width: 80px;}
+			p.site-description{
 				@include Tipo($TipoColor);
-				text-transform:capitalize;
-				table,th,td{
-					//border: 0;
+			}
+			.widget-area{
+				#calendar_wrap{
+					@include Tipo($TipoColor);
+					//text-transform:capitalize;
+					table,th,td{
+						border: none;
+					}
+					td#next{
+						//text-align:right;
+					}
+					td#prev{
+						//text-align:left;
+					}
+					thead,tbody,tfoot{}
+					thead{
+						//display:none;
+					}
+					tbody{
+						background-color:$BackColor;
+						a{
+							//font-weight:400;
+							//background-color:rgba(0,0,0,0.15);
+						}
+					}
+					tbody::after{
+						content:"";
+					}
+					caption{
+						@include Tipo($TipoColor); text-transform:capitalize;
+						//margin-bottom:5%;
+						//border-bottom: 0.5px solid #ccc;
+					}
+				}	
+			}
+		}
+		.site-content, .site-footer{
+			padding: 0 5%;
+		}
+		
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		.site-content{
+			header.page-header{
+				box-shadow:none;
+				padding:0;
+				border-left:none;
+			}
+			article{
+				float: left;
+				box-shadow: none;
+				a.post-thumbnail{
+					img{margin:0;}
+					margin-bottom: 5%;
 				}
-				td#next{
-					//text-align:right;
+				h2{
+					margin-bottom: 0;
+					font-size: 2.9rem;
+					font-weight: lighter;
 				}
-				td#prev{
-					//text-align:left;
+				.entry-header, .entry-content, .entry-footer{
+					padding:0;
 				}
-				thead,tbody,tfoot{
-				}
-				thead{
-					//display:none;
-				}
-				tbody{
-					background-color:$BackColor;
-					a{
-						//font-weight:400;
-						//background-color:rgba(0,0,0,0.15);
+				.entry-footer{
+					background-color:transparent;
+					span{
+						display:block;
 					}
 				}
-				tbody::after{
-					content:"
-					";
-				}
-				caption{
-					@include Tipo($TipoColor); text-transform:capitalize;
-					//margin-bottom:5%;
-					//border-bottom: 0.5px solid #ccc;
-				}
-			}	
+			}
+			.page-header,.hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content{
+				@include Margins();
+				background-color:transparent;;
+			}
+			.hentry:first-child{
+				float: none;
+				border-bottom: 1px solid;
+		    	padding-bottom: 5%;
+			}
 		}
-	}
-	.site-content{
-		.page-header{
-			margin:0;
-			//box-shadow: none;
-			//border: none;
-			h1.page-title{
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		.site-footer{
+			box-shadow:none;
+			margin-left: 29.4118%;
+			width:70.5882%;
+			.site-info{
+				@include Margins();
+				padding:0;
 				@include Tipo($TipoColor);
 			}
 		}
 	}
-	.site-footer{
-		//box-shadow:none;
-		background-color:transparent;
-		.site-info{
-			@include Tipo($TipoColor);
-			//padding: 8.3333% 0;
-		}
-	}
-
-	.blog,.date,.category,.tag{
-		
-		article{
-			float: left;
-			box-shadow: none;
-			a.post-thumbnail{
-				img{margin:0;}
-				margin-bottom: 5%;
-			}
-			h2{
-				margin-bottom: 0;
-				font-size: 2.9rem;
-				font-weight: lighter;
-			}
-			.entry-header, .entry-content, .entry-footer{
-				padding:0;
-			}
-			.entry-footer{
-				background-color:transparent;
-				span{
-					display:block;
-				}
-			}
-			.site-footer{
-				margin-left: 29.4118%;
-				width:70.5882%;
-			}
-		}
-		/*
-		nav.navigation.pagination{
-			box-shadow:none;
-			text-align:left;
-			padding:0;
-			.nav-links {
-				background-color:transparent;
-				.page-numbers{
-					@include Tipo(white);
-				}
-			}
-		}
-		*/
-
-	}
-	
-	
 }
-
-
+/**
+ * 16.2 Tablet Small 740px
+ */
+@media screen and (min-width: 46.25em) {
+}
+/**
+ * 16.3 Tablet Large 880px
+ */
+@media screen and (min-width: 55em) {
+}
+/**
+ * 16.4 Desktop Small 955px
+ */
+@media screen and (min-width: 59.6875em) {
+}
 /**
  * 16.5 Desktop Medium 1100px
  */
-
 @media screen and (min-width: 68.75em) {
-	#primary.content-area{
-		//background-color:green;
-		.blog{
-			//.entry-header, .entry-content, .entry-footer{ width:40%;}
-		}
-	}
 }
-
-
 /**
  * 16.6 Desktop Large 1240px
  */
-
 @media screen and (min-width: 77.5em) {
-	#primary.content-area{
-		//background-color:red;
-	}
 }
-
-
 /**
  * 16.7 Desktop X-Large 1403px
  */
-
 @media screen and (min-width: 87.6875em) {
-	#primary.content-area{
-		//background-color:yellow;
-	}
 }
 
 
