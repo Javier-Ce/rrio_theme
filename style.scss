@@ -16,7 +16,7 @@
  * 3.0 Typography
  */
 @mixin Reset_Typography(){
-	font-size: 1.7125rem !important;
+	font-size: 1.6175rem !important;
 	color: Grey !important;
 	font-family: Helvetica, sans-serif;
 	font-weight: 300;
@@ -95,7 +95,7 @@ input[type="submit"] {
 	}
 }
 .widget_calendar{
-	caption,tbody,tr,td{ @include Reset_Typography();}
+	caption,tbody,tr,td, td a{ @include Reset_Typography();}
 	@include Reset_Typography();
 }
 .widget_rss .rss-date,
@@ -169,13 +169,13 @@ footer .site-info{
 
 
 
-
-
+@mixin Borders(){
+	border-bottom: 1px solid Silver !important;
+}
 
 @mixin Margins(){
 	margin: 0 5% 5% 5% !important;
 }
-
 
 /**
  * 6.2 Menus
@@ -226,33 +226,43 @@ footer .site-info{
 		.sidebar,.site-content,.site-footer{ background-color:transparent;}
 		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		.sidebar{
+			header{
+
+			}
 			.site-header{
 				.custom-logo{ width: 80px;}
 				p.site-description{
 				}
 			}
-			.site-header,.widget{
-				margin-bottom: 5%;
-			}
+			
 			.widget-area{
-				.widget-title, caption{ margin-bottom: 2%; border-bottom: 1px solid; }
-				#calendar_wrap{
-					text-transform:capitalize;
-					table,th,td{
-						border: none;
+				.widget{
+					margin-bottom: 5%;
+					.widget-title, caption{
+						margin-bottom: 2%;
+						@include Borders();
 					}
-					td#next{text-align:right;}
-					td#prev{text-align:left;}
-					thead,tbody,tfoot{}
-					thead{ display:none;}
-					tbody{
-						background-color:transparent;
-						a{}
-					}
-					tbody::after{
-						content:"";
-					}
-					caption{
+					#calendar_wrap{
+						text-transform:capitalize;
+						table,th,td{
+							border: none;
+						}
+						td#next{text-align:right;}
+						td#prev{text-align:left;}
+						thead,tbody,tfoot{}
+						thead{ display:none;}
+						tbody{
+							background-color:transparent;
+							a{}
+						}
+						tbody::after{
+							content:"";
+						}
+						caption{
+						}
+						td a{
+							background-color:Silver;	
+						}
 					}
 				}	
 			}
@@ -295,7 +305,7 @@ footer .site-info{
 			}
 			.hentry:first-child{
 				float: none;
-				border-bottom: 1px solid;
+				@include Borders();
 		    	padding-bottom: 5%;
 			}
 		}

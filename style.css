@@ -19,7 +19,7 @@ button,
 input,
 select,
 textarea {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -33,7 +33,7 @@ textarea {
 
 blockquote cite,
 blockquote small {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -43,7 +43,7 @@ blockquote small {
     border-color: Grey; }
 
 ::-webkit-input-placeholder {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -52,7 +52,7 @@ blockquote small {
     border-color: Grey; }
 
 :-moz-placeholder {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -61,7 +61,7 @@ blockquote small {
     border-color: Grey; }
 
 ::-moz-placeholder {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -72,7 +72,7 @@ blockquote small {
     border-color: Grey; }
 
 :-ms-input-placeholder {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -84,7 +84,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -96,7 +96,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .post-password-form label {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -105,7 +105,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .main-navigation .menu-item-description {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -114,7 +114,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .post-navigation .meta-nav {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -123,7 +123,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .post-navigation .post-title {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -132,7 +132,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .pagination {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -142,7 +142,7 @@ input[type="submit"] {
 
 .image-navigation,
 .comment-navigation {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -152,7 +152,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .site-title {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -161,7 +161,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .site-description {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -170,7 +170,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .widget {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -178,7 +178,7 @@ input[type="submit"] {
   .widget a:hover {
     border-color: Grey; }
   .widget .widget-title, .widget a {
-    font-size: 1.7125rem !important;
+    font-size: 1.6175rem !important;
     color: Grey !important;
     font-family: Helvetica, sans-serif;
     font-weight: 300;
@@ -187,7 +187,7 @@ input[type="submit"] {
       border-color: Grey; }
 
 .wp-tag-cloud a.tag-cloud-link {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -196,25 +196,25 @@ input[type="submit"] {
     border-color: Grey; }
 
 .widget_calendar {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
   opacity: 1; }
-  .widget_calendar caption, .widget_calendar tbody, .widget_calendar tr, .widget_calendar td {
-    font-size: 1.7125rem !important;
+  .widget_calendar caption, .widget_calendar tbody, .widget_calendar tr, .widget_calendar td, .widget_calendar td a {
+    font-size: 1.6175rem !important;
     color: Grey !important;
     font-family: Helvetica, sans-serif;
     font-weight: 300;
     opacity: 1; }
-    .widget_calendar caption a:hover, .widget_calendar tbody a:hover, .widget_calendar tr a:hover, .widget_calendar td a:hover {
+    .widget_calendar caption a:hover, .widget_calendar tbody a:hover, .widget_calendar tr a:hover, .widget_calendar td a:hover, .widget_calendar td a a:hover {
       border-color: Grey; }
   .widget_calendar a:hover {
     border-color: Grey; }
 
 .widget_rss .rss-date,
 .widget_rss cite {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -224,7 +224,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .author-heading {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -233,7 +233,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .entry-footer {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -242,7 +242,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .page-title {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -251,7 +251,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .page-links {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -260,7 +260,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .entry-caption {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -270,7 +270,7 @@ input[type="submit"] {
 
 .comments-title,
 .comment-reply-title {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -281,7 +281,7 @@ input[type="submit"] {
 
 .comment-metadata,
 .pingback .edit-link {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -291,7 +291,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .comment-list .reply a {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -300,7 +300,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .comment-form label {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -312,7 +312,7 @@ input[type="submit"] {
 .comment-awaiting-moderation,
 .logged-in-as,
 .form-allowed-tags {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -324,7 +324,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .no-comments {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -336,7 +336,7 @@ input[type="submit"] {
   font-family: Inconsolata, monospace; }
 
 .wp-caption-text {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -346,7 +346,7 @@ input[type="submit"] {
 
 .widecolumn label,
 .widecolumn .mu_register label {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -356,7 +356,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 h1.entry-title, h2.entry-title {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -365,7 +365,7 @@ h1.entry-title, h2.entry-title {
     border-color: Grey; }
 
 h2.entry-title a, .entry-content a, .entry-footer a {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -374,7 +374,7 @@ h2.entry-title a, .entry-content a, .entry-footer a {
     border-color: Grey; }
 
 .site-title a {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -383,7 +383,7 @@ h2.entry-title a, .entry-content a, .entry-footer a {
     border-color: Grey; }
 
 footer .site-info {
-  font-size: 1.7125rem !important;
+  font-size: 1.6175rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -391,7 +391,7 @@ footer .site-info {
   footer .site-info a:hover {
     border-color: Grey; }
   footer .site-info a {
-    font-size: 1.7125rem !important;
+    font-size: 1.6175rem !important;
     color: Grey !important;
     font-family: Helvetica, sans-serif;
     font-weight: 300;
@@ -430,25 +430,27 @@ footer .site-info {
       background-color: transparent; }
     .site .sidebar .site-header .custom-logo {
       width: 80px; }
-    .site .sidebar .site-header, .site .sidebar .widget {
+    .site .sidebar .widget-area .widget {
       margin-bottom: 5%; }
-    .site .sidebar .widget-area .widget-title, .site .sidebar .widget-area caption {
-      margin-bottom: 2%;
-      border-bottom: 1px solid; }
-    .site .sidebar .widget-area #calendar_wrap {
-      text-transform: capitalize; }
-      .site .sidebar .widget-area #calendar_wrap table, .site .sidebar .widget-area #calendar_wrap th, .site .sidebar .widget-area #calendar_wrap td {
-        border: none; }
-      .site .sidebar .widget-area #calendar_wrap td#next {
-        text-align: right; }
-      .site .sidebar .widget-area #calendar_wrap td#prev {
-        text-align: left; }
-      .site .sidebar .widget-area #calendar_wrap thead {
-        display: none; }
-      .site .sidebar .widget-area #calendar_wrap tbody {
-        background-color: transparent; }
-      .site .sidebar .widget-area #calendar_wrap tbody::after {
-        content: ""; }
+      .site .sidebar .widget-area .widget .widget-title, .site .sidebar .widget-area .widget caption {
+        margin-bottom: 2%;
+        border-bottom: 1px solid Silver !important; }
+      .site .sidebar .widget-area .widget #calendar_wrap {
+        text-transform: capitalize; }
+        .site .sidebar .widget-area .widget #calendar_wrap table, .site .sidebar .widget-area .widget #calendar_wrap th, .site .sidebar .widget-area .widget #calendar_wrap td {
+          border: none; }
+        .site .sidebar .widget-area .widget #calendar_wrap td#next {
+          text-align: right; }
+        .site .sidebar .widget-area .widget #calendar_wrap td#prev {
+          text-align: left; }
+        .site .sidebar .widget-area .widget #calendar_wrap thead {
+          display: none; }
+        .site .sidebar .widget-area .widget #calendar_wrap tbody {
+          background-color: transparent; }
+        .site .sidebar .widget-area .widget #calendar_wrap tbody::after {
+          content: ""; }
+        .site .sidebar .widget-area .widget #calendar_wrap td a {
+          background-color: Silver; }
     .site .site-content, .site .site-footer {
       padding: 0 5%; }
     .site .site-content header.page-header {
@@ -476,7 +478,7 @@ footer .site-info {
       background-color: transparent; }
     .site .site-content .hentry:first-child {
       float: none;
-      border-bottom: 1px solid;
+      border-bottom: 1px solid Silver !important;
       padding-bottom: 5%; }
     .site .site-footer {
       box-shadow: none;
