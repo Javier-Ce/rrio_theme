@@ -15,41 +15,15 @@
 /**
  * 3.0 Typography
  */
-$Tipo: "Helvetica-Neue", "Helvetica", sans-serif;
-$TipoColor:#999;
-$BackColor: transparent;
-@mixin fontsize($px,$rem) {
-	font-size: $px;
-	font-size: $rem;
+@mixin Reset_Typography(){
+	font-size: 1.7125rem !important;
+	color: Grey !important;
+	font-family: Helvetica, sans-serif;
+	font-weight: 300;
+	opacity: 1;
+	a:hover{ border-color: Grey;}
 }
-@mixin Tipo($color) {
-	color:$color;
-	font-family: $Tipo;
-	//@include fontsize(12px,1.2rem);
-	//font-weight:400;
-	//line-height: 1.5;
-	//opacity:1;
-	a{ color:inherit;}
-	li{
-		//list-style: none;
-	}
-}
-@mixin a_style_A($w,$h,$color) {
-	a{
-		border-radius: 25px;
-		height: $h;
-		width: $w;
-		}
-	& a::before{
-		background-color:$color;
-		height: $h;
-		line-height: $h;
-		width: $w;
-	}
-}
-@mixin Margins(){
-	margin: 0 5% 5% 5% !important;
-}
+
 
 
 body,
@@ -57,27 +31,155 @@ button,
 input,
 select,
 textarea {
-	@include Tipo($TipoColor);
+	@include Reset_Typography();
 }
+
+blockquote cite,
+blockquote small {
+	@include Reset_Typography();
+}
+
+::-webkit-input-placeholder {
+	@include Reset_Typography();
+}
+:-moz-placeholder {
+	@include Reset_Typography();
+}
+::-moz-placeholder {
+	@include Reset_Typography();
+	opacity: 1; /* Since FF19 lowers the opacity of the placeholder by default */
+}
+:-ms-input-placeholder {
+	@include Reset_Typography();
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include Reset_Typography();
+}
+.post-password-form label {
+	@include Reset_Typography();
+}
+.main-navigation .menu-item-description {
+	@include Reset_Typography();
+}
+.post-navigation .meta-nav {
+	@include Reset_Typography();
+}
+.post-navigation .post-title {
+	@include Reset_Typography();
+}
+.pagination {
+	@include Reset_Typography();
+}
+.image-navigation,
+.comment-navigation {
+	@include Reset_Typography();
+}
+.site-title {
+	@include Reset_Typography();
+}
+.site-description {
+	@include Reset_Typography();
+}
+.widget {
+	@include Reset_Typography();
+	.widget-title, a {@include Reset_Typography();}
+}
+.wp-tag-cloud{
+	//display: none;
+	a.tag-cloud-link{
+		@include Reset_Typography();
+		//color:red !important;
+	}
+}
+.widget_calendar{
+	caption,tbody,tr,td{ @include Reset_Typography();}
+	@include Reset_Typography();
+}
+.widget_rss .rss-date,
+.widget_rss cite {
+	@include Reset_Typography();
+}
+.author-heading {
+	@include Reset_Typography();
+}
+.entry-footer {
+	@include Reset_Typography();
+}
+.page-title {
+	@include Reset_Typography();
+}
+.page-links {
+	@include Reset_Typography();
+}
+.entry-caption {
+	@include Reset_Typography();
+}
+.comments-title,
+.comment-reply-title {
+	@include Reset_Typography();
+}
+.comment-metadata,
+.pingback .edit-link {
+	@include Reset_Typography();
+}
+.comment-list .reply a {
+	@include Reset_Typography();
+}
+.comment-form label {
+	@include Reset_Typography();
+}
+.comment-notes,
+.comment-awaiting-moderation,
+.logged-in-as,
+.form-allowed-tags {
+	@include Reset_Typography();
+}
+.no-comments {
+	@include Reset_Typography();
+}
+.form-allowed-tags code {
+	font-family: Inconsolata, monospace;
+}
+.wp-caption-text {
+	@include Reset_Typography();
+}
+.widecolumn label,
+.widecolumn .mu_register label {
+	@include Reset_Typography();
+}
+h1.entry-title,h2.entry-title{
+	@include Reset_Typography();
+}
+h2.entry-title, .entry-content, .entry-footer{
+	a{
+		@include Reset_Typography();
+	}
+}
+.site-title a{
+	@include Reset_Typography();
+}
+footer .site-info{
+	@include Reset_Typography();
+	a{@include Reset_Typography();}
+}
+
+
+
+
+
+
+
+@mixin Margins(){
+	margin: 0 5% 5% 5% !important;
+}
+
 
 /**
  * 6.2 Menus
  */
- nav.navigation.pagination{
- 	.nav-links{
- 		//background-color:transparent;
- 		@include a_style_A(40px,40px,$TipoColor);	
- 	}
- }
-.post-navigation{
-	.meta-nav,.post-title{
-		@include Tipo($TipoColor);
-	}
-}
-
-.posted-on {
-	//text-transform: capitalize;
-}
 
 .posted-on:before, .cat-links:before, .tags-links:before, .edit-link:before {
 	content:"";
@@ -89,27 +191,20 @@ textarea {
 /**
  * 12.1 Posts and pages
  */
- .entry-info{
- 	//position:absolute;
- 	//display: none;
- }
- .entry-title {
-	@include Tipo($TipoColor);
-	//margin-bottom: 0;
-}
+
+
 .entry-content,
 .entry-summary,
 .page-content,
 .site-content,
 .comment-content{
 	span,div,a,p,h1,h2,h3,h4,h5,h6
-	{@include Tipo($TipoColor);}
+	{}
 }
 
 .entry-footer {
 	//background-color: transparent;
 	span,a{
-		@include Tipo($TipoColor);
 	}
 }
 /**
@@ -134,42 +229,30 @@ textarea {
 			.site-header{
 				.custom-logo{ width: 80px;}
 				p.site-description{
-					@include Tipo($TipoColor);
 				}
 			}
 			.site-header,.widget{
 				margin-bottom: 5%;
 			}
 			.widget-area{
-				.widget-title{ margin-bottom: 2%; }
+				.widget-title, caption{ margin-bottom: 2%; border-bottom: 1px solid; }
 				#calendar_wrap{
-					@include Tipo($TipoColor);
-					//text-transform:capitalize;
+					text-transform:capitalize;
 					table,th,td{
 						border: none;
 					}
-					td#next{
-						//text-align:right;
-					}
-					td#prev{
-						//text-align:left;
-					}
+					td#next{text-align:right;}
+					td#prev{text-align:left;}
 					thead,tbody,tfoot{}
 					thead{ display:none;}
 					tbody{
-						background-color:$BackColor;
-						a{
-							//font-weight:400;
-							//background-color:rgba(0,0,0,0.15);
-						}
+						background-color:transparent;
+						a{}
 					}
 					tbody::after{
 						content:"";
 					}
 					caption{
-						@include Tipo($TipoColor); text-transform:capitalize;
-						//margin-bottom:5%;
-						//border-bottom: 0.5px solid #ccc;
 					}
 				}	
 			}
@@ -194,7 +277,6 @@ textarea {
 				}
 				h2{
 					margin-bottom: 0;
-					font-size: 2.9rem;
 					font-weight: lighter;
 				}
 				.entry-header, .entry-content, .entry-footer{
@@ -225,7 +307,6 @@ textarea {
 			.site-info{
 				@include Margins();
 				padding:0;
-				@include Tipo($TipoColor);
 			}
 		}
 	}

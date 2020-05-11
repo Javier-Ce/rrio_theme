@@ -16,8 +16,12 @@
 		if ( $count==1 ) :
 			twentyfifteen_post_thumbnail();
 		else :
-			the_post_thumbnail('large');
-		endif;
+			?>
+			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+			<?php the_post_thumbnail( 'large', array( 'alt' => get_the_title() ) ); ?>
+		</a>
+
+		<?php endif;
 		
 		//the_post_thumbnail('thumbnail');
 		//echo 'H';
