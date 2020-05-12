@@ -19,7 +19,7 @@ button,
 input,
 select,
 textarea {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -33,7 +33,7 @@ textarea {
 
 blockquote cite,
 blockquote small {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -43,7 +43,7 @@ blockquote small {
     border-color: Grey; }
 
 ::-webkit-input-placeholder {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -52,7 +52,7 @@ blockquote small {
     border-color: Grey; }
 
 :-moz-placeholder {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -61,7 +61,7 @@ blockquote small {
     border-color: Grey; }
 
 ::-moz-placeholder {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -72,7 +72,7 @@ blockquote small {
     border-color: Grey; }
 
 :-ms-input-placeholder {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -84,7 +84,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -96,7 +96,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .post-password-form label {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -105,7 +105,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .main-navigation .menu-item-description {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -114,7 +114,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .post-navigation .meta-nav {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -123,7 +123,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .post-navigation .post-title {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -132,7 +132,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .pagination {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -142,7 +142,7 @@ input[type="submit"] {
 
 .image-navigation,
 .comment-navigation {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -152,7 +152,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .site-title {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -161,7 +161,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .site-description {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -170,7 +170,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .widget {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -178,7 +178,7 @@ input[type="submit"] {
   .widget a:hover {
     border-color: Grey; }
   .widget .widget-title, .widget a {
-    font-size: 1.6175rem !important;
+    font-size: 1.5125rem !important;
     color: Grey !important;
     font-family: Helvetica, sans-serif;
     font-weight: 300;
@@ -187,7 +187,7 @@ input[type="submit"] {
       border-color: Grey; }
 
 .wp-tag-cloud a.tag-cloud-link {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -196,13 +196,13 @@ input[type="submit"] {
     border-color: Grey; }
 
 .widget_calendar {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
   opacity: 1; }
   .widget_calendar caption, .widget_calendar tbody, .widget_calendar tr, .widget_calendar td, .widget_calendar td a {
-    font-size: 1.6175rem !important;
+    font-size: 1.5125rem !important;
     color: Grey !important;
     font-family: Helvetica, sans-serif;
     font-weight: 300;
@@ -214,7 +214,7 @@ input[type="submit"] {
 
 .widget_rss .rss-date,
 .widget_rss cite {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -224,7 +224,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .author-heading {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -233,7 +233,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .entry-footer {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -242,7 +242,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .page-title {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -251,7 +251,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .page-links {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -260,7 +260,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .entry-caption {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -270,7 +270,7 @@ input[type="submit"] {
 
 .comments-title,
 .comment-reply-title {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -281,7 +281,7 @@ input[type="submit"] {
 
 .comment-metadata,
 .pingback .edit-link {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -291,7 +291,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .comment-list .reply a {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -300,7 +300,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .comment-form label {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -312,7 +312,7 @@ input[type="submit"] {
 .comment-awaiting-moderation,
 .logged-in-as,
 .form-allowed-tags {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -324,7 +324,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 .no-comments {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -336,7 +336,7 @@ input[type="submit"] {
   font-family: Inconsolata, monospace; }
 
 .wp-caption-text {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -346,7 +346,7 @@ input[type="submit"] {
 
 .widecolumn label,
 .widecolumn .mu_register label {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -356,7 +356,7 @@ input[type="submit"] {
     border-color: Grey; }
 
 h1.entry-title, h2.entry-title {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -365,7 +365,7 @@ h1.entry-title, h2.entry-title {
     border-color: Grey; }
 
 h2.entry-title a, .entry-content a, .entry-footer a {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -374,7 +374,7 @@ h2.entry-title a, .entry-content a, .entry-footer a {
     border-color: Grey; }
 
 .site-title a {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -383,7 +383,7 @@ h2.entry-title a, .entry-content a, .entry-footer a {
     border-color: Grey; }
 
 footer .site-info {
-  font-size: 1.6175rem !important;
+  font-size: 1.5125rem !important;
   color: Grey !important;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
@@ -391,7 +391,7 @@ footer .site-info {
   footer .site-info a:hover {
     border-color: Grey; }
   footer .site-info a {
-    font-size: 1.6175rem !important;
+    font-size: 1.5125rem !important;
     color: Grey !important;
     font-family: Helvetica, sans-serif;
     font-weight: 300;
@@ -407,6 +407,38 @@ footer .site-info {
 
 .tags-links a:before {
   content: "#"; }
+
+h1.site-title a {
+  border: 1px solid transparent;
+  padding: 2px 8px !important;
+  margin: 0 0 0 0 !important;
+  background-color: Grey;
+  color: white !important; }
+
+.wp-tag-cloud li,
+.tags-links,
+.site-info {
+  margin-bottom: 5px; }
+  .wp-tag-cloud li a,
+  .tags-links a,
+  .site-info a {
+    border: 1px solid Silver !important;
+    padding: 2px 8px !important;
+    margin: 0 0 0 0 !important; }
+
+h1.page-title {
+  display: inline-block;
+  border: 1px solid Silver !important;
+  padding: 2px 8px !important;
+  margin: 0 0 0 0 !important; }
+
+.site-title a:hover,
+.wp-tag-cloud li a:hover,
+.tags-links a:hover {
+  background-color: Silver; }
+
+.tags-links a:before {
+  content: none; }
 
 /**
  * 12.1 Posts and pages
@@ -424,69 +456,133 @@ footer .site-info {
   body:before {
     box-shadow: none;
     background-color: transparent; }
-  .site {
+  body .site {
     max-width: none; }
-    .site .sidebar, .site .site-content, .site .site-footer {
+    body .site .sidebar, body .site .site-content, body .site .site-footer {
       background-color: transparent; }
-    .site .sidebar .site-header .custom-logo {
-      width: 80px; }
-    .site .sidebar .widget-area .widget {
-      margin-bottom: 5%; }
-      .site .sidebar .widget-area .widget .widget-title, .site .sidebar .widget-area .widget caption {
-        margin-bottom: 2%;
-        border-bottom: 1px solid Silver !important; }
-      .site .sidebar .widget-area .widget #calendar_wrap {
+    body .site .sidebar .site-header {
+      margin-top: 4rem;
+      padding: 0 30% 0 10%;
+      margin-bottom: 12%; }
+      body .site .sidebar .site-header .custom-logo {
+        width: 80px; }
+      body .site .sidebar .site-header .site-title, body .site .sidebar .site-header .site-description {
+        display: inline-block; }
+      body .site .sidebar .site-header .site-description {
+        margin-top: 0; }
+    body .site .sidebar .widget-area .widget.widget_tag_cloud .widget-title {
+      border: none !important; }
+    body .site .sidebar .widget-area .widget_categories .widget-title {
+      display: none; }
+    body .site .sidebar .widget-area .widget_categories .cat-item {
+      padding-bottom: 0;
+      border: 1px solid Silver !important;
+      display: inline-block;
+      border-radius: 20px;
+      padding: 1px 12px !important;
+      margin: 0 0 6px 0 !important; }
+    body .site .sidebar .widget-area .widget {
+      padding: 0 30% 0 10%;
+      margin-bottom: 12%; }
+      body .site .sidebar .widget-area .widget .widget-title, body .site .sidebar .widget-area .widget caption {
+        text-transform: capitalize;
+        letter-spacing: normal;
+        margin-bottom: 2%; }
+      body .site .sidebar .widget-area .widget #calendar_wrap {
         text-transform: capitalize; }
-        .site .sidebar .widget-area .widget #calendar_wrap table, .site .sidebar .widget-area .widget #calendar_wrap th, .site .sidebar .widget-area .widget #calendar_wrap td {
+        body .site .sidebar .widget-area .widget #calendar_wrap table, body .site .sidebar .widget-area .widget #calendar_wrap th, body .site .sidebar .widget-area .widget #calendar_wrap td {
           border: none; }
-        .site .sidebar .widget-area .widget #calendar_wrap td#next {
-          text-align: right; }
-        .site .sidebar .widget-area .widget #calendar_wrap td#prev {
-          text-align: left; }
-        .site .sidebar .widget-area .widget #calendar_wrap thead {
+        body .site .sidebar .widget-area .widget #calendar_wrap thead {
           display: none; }
-        .site .sidebar .widget-area .widget #calendar_wrap tbody {
+        body .site .sidebar .widget-area .widget #calendar_wrap tbody {
           background-color: transparent; }
-        .site .sidebar .widget-area .widget #calendar_wrap tbody::after {
+        body .site .sidebar .widget-area .widget #calendar_wrap tbody::after {
           content: ""; }
-        .site .sidebar .widget-area .widget #calendar_wrap td a {
+        body .site .sidebar .widget-area .widget #calendar_wrap td a {
+          background-color: Silver;
+          border: 1px solid Silver; }
+        body .site .sidebar .widget-area .widget #calendar_wrap td a:hover {
+          border-color: Grey; }
+        body .site .sidebar .widget-area .widget #calendar_wrap td#next {
+          text-align: right; }
+        body .site .sidebar .widget-area .widget #calendar_wrap td#prev {
+          text-align: left; }
+        body .site .sidebar .widget-area .widget #calendar_wrap td#next a, body .site .sidebar .widget-area .widget #calendar_wrap td#prev a {
+          border: 1px solid Silver !important;
+          padding: 2px 8px !important;
+          margin: 0 0 0 0 !important;
+          background-color: transparent; }
+        body .site .sidebar .widget-area .widget #calendar_wrap td#next a:hover, body .site .sidebar .widget-area .widget #calendar_wrap td#prev a:hover {
           background-color: Silver; }
-    .site .site-content, .site .site-footer {
-      padding: 0 5%; }
-    .site .site-content header.page-header {
+    body .site .site-content, body .site .site-footer {
+      padding: 0 0 0 0 !important; }
+    body .site .site-content .site-main {
+      padding-top: 0 !important;
+      margin-top: 4rem; }
+    body .site .site-content header.page-header {
       box-shadow: none;
       padding: 0;
       border-left: none; }
-    .site .site-content article {
+    body .site .site-content article {
       float: left;
       box-shadow: none; }
-      .site .site-content article a.post-thumbnail {
+      body .site .site-content article a.post-thumbnail {
         margin-bottom: 5%; }
-        .site .site-content article a.post-thumbnail img {
+        body .site .site-content article a.post-thumbnail img {
           margin: 0; }
-      .site .site-content article h2 {
-        margin-bottom: 0;
-        font-weight: lighter; }
-      .site .site-content article .entry-header, .site .site-content article .entry-content, .site .site-content article .entry-footer {
+      body .site .site-content article h1, body .site .site-content article h2 {
+        margin-bottom: 0; }
+      body .site .site-content article .entry-header, body .site .site-content article .entry-content, body .site .site-content article .entry-footer {
         padding: 0; }
-      .site .site-content article .entry-footer {
+      body .site .site-content article .entry-footer {
         background-color: transparent; }
-        .site .site-content article .entry-footer span {
+        body .site .site-content article .entry-footer .byline:before {
+          content: none; }
+        body .site .site-content article .entry-footer .byline, body .site .site-content article .entry-footer .edit-link {
+          display: none; }
+        body .site .site-content article .entry-footer span {
           display: block; }
-    .site .site-content .page-header, .site .site-content .hentry, .site .site-content .hentry + .hentry, .site .site-content .page-header + .hentry, .site .site-content .page-header + .page-content {
-      margin: 0 5% 5% 5% !important;
-      background-color: transparent; }
-    .site .site-content .hentry:first-child {
+    body .site .site-content .page-header, body .site .site-content .hentry, body .site .site-content .hentry + .hentry, body .site .site-content .page-header + .hentry, body .site .site-content .page-header + .page-content {
+      background-color: transparent;
+      margin: 0 5% 5% 0; }
+    body .site .site-content .hentry:first-of-type {
       float: none;
-      border-bottom: 1px solid Silver !important;
+      margin: 0 0% 0% 0% !important;
+      margin-bottom: 5% !important;
       padding-bottom: 5%; }
-    .site .site-footer {
+    body .site .site-footer {
       box-shadow: none;
       margin-left: 29.4118%;
       width: 70.5882%; }
-      .site .site-footer .site-info {
-        margin: 0 5% 5% 5% !important;
-        padding: 0; } }
+      body .site .site-footer .site-info {
+        padding: 5% 0 10% 0 !important;
+        margin: 0 0% 0% 0% !important;
+        padding: 0; }
+  body.single .site .site-content .hentry, body.single .site .site-content .post-navigation {
+    float: left;
+    border: none !important; }
+  body.single .site .site-content .post-navigation {
+    width: 15%; }
+  body.single .site .site-content article.hentry {
+    width: 80%; }
+  body.single .site .site-content .post-navigation {
+    margin: 0 !important;
+    background-color: transparent;
+    box-shadow: none;
+    text-transform: capitalize; }
+    body.single .site .site-content .post-navigation .nav-previous, body.single .site .site-content .post-navigation .nav-next {
+      margin-bottom: 5px;
+      background-image: none; }
+      body.single .site .site-content .post-navigation .nav-previous a, body.single .site .site-content .post-navigation .nav-next a {
+        border: 1px solid Silver !important;
+        padding: 2px 8px !important;
+        margin: 0 0 0 0 !important; }
+      body.single .site .site-content .post-navigation .nav-previous a:before, body.single .site .site-content .post-navigation .nav-next a:before {
+        background-color: transparent; }
+      body.single .site .site-content .post-navigation .nav-previous .meta-nav, body.single .site .site-content .post-navigation .nav-next .meta-nav {
+        text-transform: capitalize; }
+    body.single .site .site-content .post-navigation .nav-previous :hover, body.single .site .site-content .post-navigation .nav-next :hover {
+      background-color: Silver; } }
 
 /**
  * 16.2 Tablet Small 740px

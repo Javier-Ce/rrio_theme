@@ -27,10 +27,10 @@
 				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
 			}
 			?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfifteen' ) ); ?>" class="imprint">
+			<a href="<?php echo esc_url( __( site_url(), 'twentyfifteen' ) ); ?>" class="imprint">
 				<?php
 				/* translators: %s: WordPress */
-				printf( __( 'Published by %s', 'twentyfifteen' ), 'rrio' );
+				printf( __( 'Published by %s', 'twentyfifteen' ), '<span>rrio</span>' );
 				?>
 			</a>
 		</div><!-- .site-info -->

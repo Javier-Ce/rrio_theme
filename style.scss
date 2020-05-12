@@ -15,9 +15,13 @@
 /**
  * 3.0 Typography
  */
+$color:Grey;
+$MarginTop:4rem;
+$widget_interspace:12%;
+
 @mixin Reset_Typography(){
-	font-size: 1.6175rem !important;
-	color: Grey !important;
+	font-size: 1.5125rem !important;
+	color: $color !important;
 	font-family: Helvetica, sans-serif;
 	font-weight: 300;
 	opacity: 1;
@@ -167,16 +171,38 @@ footer .site-info{
 }
 
 
-
+$border: 1px solid Silver !important;
 
 @mixin Borders(){
-	border-bottom: 1px solid Silver !important;
+	border-bottom: $border;
 }
 
 @mixin Margins(){
-	margin: 0 5% 5% 5% !important;
+	margin: 0 0% 0% 0% !important;
 }
 
+@mixin Tag(){
+	border: $border;
+	padding: 2px 8px !important;
+	margin: 0 0 0 0 !important;
+}
+@mixin TagBlack(){
+	border: 1px solid transparent;
+	padding: 2px 8px !important;
+	margin: 0 0 0 0 !important;
+	background-color: $color;
+	color: white !important;
+}
+@mixin Cat(){
+	border: $border;
+	display: inline-block;
+	border-radius:20px;
+	padding: 1px 12px !important;
+	margin: 0 0 6px 0 !important;
+}
+@mixin Taghover(){
+	background-color:Silver;
+}
 /**
  * 6.2 Menus
  */
@@ -187,6 +213,32 @@ footer .site-info{
 
 .tags-links a:before{
 	content:"#";
+}
+
+h1.site-title a{
+	@include TagBlack();
+}
+.wp-tag-cloud li,
+.tags-links,
+.site-info{
+	margin-bottom: 5px;	
+	a{
+		@include Tag();
+	}
+}
+h1.page-title{
+	display: inline-block;
+	@include Tag();
+}
+.site-title,
+.wp-tag-cloud li,
+.tags-links{
+	a:hover{
+		@include Taghover();
+	}
+}
+.tags-links a:before {
+    content: none;
 }
 /**
  * 12.1 Posts and pages
@@ -221,105 +273,182 @@ footer .site-info{
 		box-shadow:none;
 		background-color:transparent;
 	}
-	.site{
-		max-width: none;
-		.sidebar,.site-content,.site-footer{ background-color:transparent;}
-		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		.sidebar{
-			header{
+	body:before{
 
-			}
-			.site-header{
-				.custom-logo{ width: 80px;}
-				p.site-description{
+	}
+	body{
+		.site{
+			max-width: none;
+			.sidebar,.site-content,.site-footer{ background-color:transparent;}
+			///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			.sidebar{
+				.site-header{
+					margin-top:$MarginTop;
+					padding: 0 30% 0 10%;
+					margin-bottom: $widget_interspace;
+					.custom-logo{ width: 80px;}
+					.site-title, .site-description{
+						display: inline-block;
+					}
+					.site-description{ margin-top: 0; }
+				}
+				.widget-area{
+					.widget.widget_tag_cloud .widget-title{
+						border: none !important;
+					}
+					.widget_categories{
+						.widget-title{ display: none; }
+						.cat-item{
+							padding-bottom: 0;
+							@include Cat();
+						}
+					}
+					.widget{
+						padding: 0 30% 0 10%;
+						margin-bottom: $widget_interspace;
+						.widget-title, caption{
+							text-transform: capitalize;
+							letter-spacing: normal;
+							margin-bottom: 2%;
+							//@include Borders();
+						}
+						#calendar_wrap{
+							text-transform:capitalize;
+							table,th,td{
+								border: none;
+							}
+							thead,tbody,tfoot{}
+							thead{ display:none;}
+							tbody{
+								background-color:transparent;
+								a{}
+							}
+							tbody::after{
+								content:"";
+							}
+							caption{
+							}
+							td a{
+								background-color: Silver;
+								border: 1px solid Silver;	
+							}
+							td a:hover{
+								border-color:$color;
+							}
+							td#next{text-align:right;}
+							td#prev{text-align:left;}
+							td#next,td#prev{
+								a{
+									@include Tag();
+									background-color:transparent;
+								}
+								a:hover{
+									@include Taghover();
+								}
+							}
+						}
+					}	
 				}
 			}
-			
-			.widget-area{
-				.widget{
-					margin-bottom: 5%;
-					.widget-title, caption{
-						margin-bottom: 2%;
-						@include Borders();
-					}
-					#calendar_wrap{
-						text-transform:capitalize;
-						table,th,td{
-							border: none;
-						}
-						td#next{text-align:right;}
-						td#prev{text-align:left;}
-						thead,tbody,tfoot{}
-						thead{ display:none;}
-						tbody{
-							background-color:transparent;
-							a{}
-						}
-						tbody::after{
-							content:"";
-						}
-						caption{
-						}
-						td a{
-							background-color:Silver;	
-						}
-					}
-				}	
+			.site-content, .site-footer{
+				padding: 0 0 0 0 !important;
 			}
-		}
-		.site-content, .site-footer{
-			padding: 0 5%;
-		}
-		
-		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		.site-content{
-			header.page-header{
+			///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			.site-content{
+				.site-main{
+					padding-top:0 !important;
+					margin-top:$MarginTop;
+				}
+				header.page-header{
+					box-shadow:none;
+					padding:0;
+					border-left:none;
+				}
+				article{
+					float: left;
+					box-shadow: none;
+					a.post-thumbnail{
+						img{ margin:0; }
+						margin-bottom: 5%;
+					}
+					h1,h2{
+						margin-bottom: 0;
+					}
+					.entry-header, .entry-content, .entry-footer{
+						padding:0;
+					}
+					.entry-footer{
+						background-color:transparent;
+						.byline:before {
+						    content: none;
+						}
+						.byline, .edit-link{display:none;}
+						span{
+							display:block;
+						}
+					}
+				}
+				.page-header,.hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content{
+					background-color:transparent;
+					margin: 0 5% 5% 0;
+				}
+				.hentry:first-of-type{
+					float: none;
+					//@include Borders();
+					@include Margins();
+					margin-bottom: 5% !important;
+			    	padding-bottom: 5%;
+				}
+			}
+			///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			.site-footer{
 				box-shadow:none;
-				padding:0;
-				border-left:none;
-			}
-			article{
-				float: left;
-				box-shadow: none;
-				a.post-thumbnail{
-					img{margin:0;}
-					margin-bottom: 5%;
-				}
-				h2{
-					margin-bottom: 0;
-					font-weight: lighter;
-				}
-				.entry-header, .entry-content, .entry-footer{
+				margin-left: 29.4118%;
+				width:70.5882%;
+				.site-info{
+					padding: 5% 0 10% 0 !important;
+					@include Margins();
 					padding:0;
 				}
-				.entry-footer{
-					background-color:transparent;
-					span{
-						display:block;
-					}
-				}
-			}
-			.page-header,.hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content{
-				@include Margins();
-				background-color:transparent;;
-			}
-			.hentry:first-child{
-				float: none;
-				@include Borders();
-		    	padding-bottom: 5%;
-			}
-		}
-		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		.site-footer{
-			box-shadow:none;
-			margin-left: 29.4118%;
-			width:70.5882%;
-			.site-info{
-				@include Margins();
-				padding:0;
 			}
 		}
 	}
+	body.single{
+		.site{
+			.site-content{
+				.hentry,.post-navigation{
+					float: left;
+					border:none !important;
+				}
+				.post-navigation{ width: 15%;}
+				article.hentry{ width: 80%;}
+				.post-navigation{
+					margin:0 !important; 
+					background-color:transparent;
+					box-shadow:none;
+					text-transform: capitalize;
+					.nav-previous, .nav-next{
+						margin-bottom: 5px;
+						background-image: none;
+						a{
+							@include Tag();
+						}
+						a:before{
+							background-color:transparent;
+						}
+						.meta-nav{
+							text-transform: capitalize;
+						}
+					}
+					.nav-previous :hover, .nav-next :hover{
+						@include Taghover();
+					}
+				}
+			}
+		}
+	}
+
+	
 }
 /**
  * 16.2 Tablet Small 740px
