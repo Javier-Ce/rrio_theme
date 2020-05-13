@@ -15,7 +15,8 @@
 /**
  * 3.0 Typography
  */
-$color:Grey;
+$color:DarkBlue;
+$color2: Silver;
 $MarginTop:4rem;
 $widget_interspace:12%;
 
@@ -171,7 +172,7 @@ footer .site-info{
 }
 
 
-$border: 1px solid Silver !important;
+$border: 1px solid $color !important;
 
 @mixin Borders(){
 	border-bottom: $border;
@@ -215,21 +216,19 @@ $border: 1px solid Silver !important;
 	content:"#";
 }
 
-h1.site-title a{
-	@include TagBlack();
+.site-title a,
+h1.page-title,
+.site-info span{
+	font-weight:bold;
 }
 .wp-tag-cloud li,
-.tags-links,
-.site-info{
+.tags-links{
 	margin-bottom: 5px;	
 	a{
 		@include Tag();
 	}
 }
-h1.page-title{
-	display: inline-block;
-	@include Tag();
-}
+
 .site-title,
 .wp-tag-cloud li,
 .tags-links{
@@ -282,7 +281,9 @@ h1.page-title{
 			.sidebar,.site-content,.site-footer{ background-color:transparent;}
 			///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			.sidebar{
+				max-width: none !important;
 				.site-header{
+					border-right: 1px solid $color2;
 					margin-top:$MarginTop;
 					padding: 0 30% 0 10%;
 					margin-bottom: $widget_interspace;
@@ -301,6 +302,9 @@ h1.page-title{
 						.cat-item{
 							padding-bottom: 0;
 							@include Cat();
+						}
+						.cat-item.current-cat, .cat-item:hover{
+							background-color: $color2;
 						}
 					}
 					.widget{
@@ -358,46 +362,70 @@ h1.page-title{
 				.site-main{
 					padding-top:0 !important;
 					margin-top:$MarginTop;
-				}
-				header.page-header{
-					box-shadow:none;
-					padding:0;
-					border-left:none;
-				}
-				article{
-					float: left;
-					box-shadow: none;
-					a.post-thumbnail{
-						img{ margin:0; }
-						margin-bottom: 5%;
-					}
-					h1,h2{
-						margin-bottom: 0;
-					}
-					.entry-header, .entry-content, .entry-footer{
+					header.page-header{
+						box-shadow:none;
 						padding:0;
+						border-left:none;
 					}
-					.entry-footer{
+					article{
+						float: left;
+						box-shadow: none;
+						a.post-thumbnail{
+							img{ margin:0; }
+							margin-bottom: 1em;
+						}
+						h1,h2{
+							margin-bottom: 0;
+						}
+						.entry-header, .entry-content, .entry-footer{
+							padding:0;
+						}
+						.entry-footer{
+							background-color:transparent;
+							.byline:before {
+							    content: none;
+							}
+							.byline {display:none;}
+							span{
+								display:block;
+							}
+						}
+					}
+					.page-header,.hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content{
 						background-color:transparent;
-						.byline:before {
-						    content: none;
-						}
-						.byline, .edit-link{display:none;}
-						span{
-							display:block;
+						margin: 0 5% 5% 0;
+					}
+					nav.navigation.pagination{
+						clear: both;
+						background-color:transparent;
+						box-shadow:none;
+						margin:0;
+						.nav-links{
+							text-align: left;
+							position: initial;	
+							.page-numbers{
+								color: $color;
+								width:auto;
+								height: auto;
+								border: 1px solid $color;
+								background-color:transparent;
+								margin:0; padding: 0;
+								line-height: 1;
+								width: auto;
+								display: inline-block;
+								vertical-align:bottom;
+								padding: 1em;
+							}
+							.page-numbers.next, .page-numbers.prev{
+								position: static;
+							}
+							.page-numbers.prev:before, .page-numbers.next:before{
+								content:none;
+							}
+
+							
 						}
 					}
-				}
-				.page-header,.hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content{
-					background-color:transparent;
-					margin: 0 5% 5% 0;
-				}
-				.hentry:first-of-type{
-					float: none;
-					//@include Borders();
-					@include Margins();
-					margin-bottom: 5% !important;
-			    	padding-bottom: 5%;
 				}
 			}
 			///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -413,36 +441,70 @@ h1.page-title{
 			}
 		}
 	}
-	body.single{
-		.site{
-			.site-content{
-				.hentry,.post-navigation{
-					float: left;
-					border:none !important;
+	body.blog{
+		.site-content{
+			.site-main{
+				.hentry:first-of-type{
+					float: none;
+					@include Margins();
+					margin-bottom: 5% !important;
+			    	padding-bottom: 5%;
 				}
-				.post-navigation{ width: 15%;}
-				article.hentry{ width: 80%;}
-				.post-navigation{
-					margin:0 !important; 
-					background-color:transparent;
-					box-shadow:none;
-					text-transform: capitalize;
-					.nav-previous, .nav-next{
-						margin-bottom: 5px;
-						background-image: none;
-						a{
-							@include Tag();
-						}
-						a:before{
-							background-color:transparent;
-						}
-						.meta-nav{
-							text-transform: capitalize;
-						}
+			}
+		}
+	}
+	body.blog, body.archive{
+		h2{
+			display: inline-block;
+		}
+		h2:after{
+			content:', ';
+			margin-right:0.25em;
+		}
+		.date{
+			margin-left:0.25em;
+			text-transform: capitalize;
+		}
+	}
+	body.single{
+		.site-content{
+			margin-right: 29.4118%;
+			width:55.5882%;
+			.hentry,.post-navigation{
+				float: left;
+				border:none !important;
+			}
+			article.hentry{	
+				width: 100%;
+				margin: 0 !important;
+				.entry-header{
+					margin-top: 1em;
+				}
+			}
+			.navigation.post-navigation{
+				position: absolute;
+				right:0;
+				width:14.4118%;
+				background-color:transparent;
+				margin:0 !important; 
+				box-shadow:none;
+				text-transform: capitalize;
+				.nav-previous, .nav-next{
+					margin-bottom: 5px;
+					padding-right: 20%;
+					background-image: none;
+					a{
+						@include Tag();
 					}
-					.nav-previous :hover, .nav-next :hover{
-						@include Taghover();
+					a:before{
+						background-color:transparent;
 					}
+					.meta-nav{
+						text-transform: capitalize;
+					}
+				}
+				.nav-previous :hover, .nav-next :hover{
+					@include Taghover();
 				}
 			}
 		}

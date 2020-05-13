@@ -13,15 +13,23 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 		// Post thumbnail.
-		if ( $count==1 ) :
-			twentyfifteen_post_thumbnail();
-		else :
+		if ( $count==0 && !is_archive()) :
+			if ( !is_single() ) :
 			?>
-			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
-			<?php the_post_thumbnail( 'large', array( 'alt' => get_the_title() ) ); ?>
-		</a>
+				<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+			<?php
+			endif;
+				the_post_thumbnail( 'large', array( 'alt' => get_the_title() ) );
+		else :
+			twentyfifteen_post_thumbnail();
+			if ( !is_single() ) :
+			?>
+			</a>
 
-		<?php endif;
+
+		<?php 
+			endif;
+		endif;
 		
 		//the_post_thumbnail('thumbnail');
 		//echo 'H';
@@ -33,6 +41,10 @@
 			the_title( '<h1 class="entry-title">', '</h1>' );
 			else :
 				the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
+						//the_date( 'F j, Y', '<span>', '</span>',true);
+						echo '<span class="date">'.get_the_date().'</span>';
+						
+
 			endif;
 			?>
 	</header><!-- .entry-header -->
@@ -68,8 +80,12 @@
 	?>
 
 	<footer class="entry-footer">
-		<?php twentyfifteen_entry_meta(); ?>
-		<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php
+		if ( is_single() ) : 
+			twentyfifteen_entry_meta(); 
+		endif;
+		?>
+		<?php //edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 
 </article><!-- #post-<?php the_ID(); ?> -->
