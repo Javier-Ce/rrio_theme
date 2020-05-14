@@ -526,6 +526,7 @@ body .site {
       border-bottom: none; }
     body .site .site-content .site-main article {
       float: left;
+      width: 50%;
       box-shadow: none; }
       body .site .site-content .site-main article a.post-thumbnail {
         margin-bottom: 1em; }
@@ -545,7 +546,8 @@ body .site {
           display: block; }
     body .site .site-content .site-main .page-header, body .site .site-content .site-main .hentry, body .site .site-content .site-main .hentry + .hentry, body .site .site-content .site-main .page-header + .hentry, body .site .site-content .site-main .page-header + .page-content {
       background-color: transparent;
-      margin: 0 5% 5% 0; }
+      margin: 0 0% 10% 0;
+      padding: 0 2% 0 2%; }
     body .site .site-content .site-main nav.navigation.pagination {
       clear: both;
       background-color: transparent;
@@ -585,6 +587,7 @@ body .site {
 
 body.blog .site-content .site-main .hentry:first-of-type {
   float: none;
+  width: auto;
   margin: 0 0% 0% 0% !important;
   margin-bottom: 5% !important;
   padding-bottom: 5%; }
@@ -665,6 +668,8 @@ body.single .site-content .navigation.post-navigation {
     padding: 0 0 0 0 !important; }
   body .site .site-content .site-main {
     margin-top: 4rem; }
+    body .site .site-content .site-main article {
+      width: auto; }
   body .site .site-footer {
     margin-left: 29.4118%;
     width: 70.5882%; }

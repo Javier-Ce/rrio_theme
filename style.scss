@@ -378,6 +378,7 @@ body{
 				}
 				article{
 					float: left;
+					width: 50%;
 					box-shadow: none;
 					a.post-thumbnail{
 						img{ margin:0; }
@@ -402,7 +403,9 @@ body{
 				}
 				.page-header,.hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content{
 					background-color:transparent;
-					margin: 0 5% 5% 0;
+					//margin: 0 5% 5% 0;
+					margin: 0 0% 10% 0;
+    				padding: 0 2% 0 2%;
 				}
 				nav.navigation.pagination{
 					clear: both;
@@ -456,6 +459,7 @@ body.blog{
 		.site-main{
 			.hentry:first-of-type{
 				float: none;
+				width:auto;
 				@include Margins();
 				margin-bottom: 5% !important;
 		    	padding-bottom: 5%;
@@ -573,6 +577,7 @@ body.single{
 					header.page-header{
 					}
 					article{
+						width: auto;
 					}
 					.page-header,.hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content{
 					}
