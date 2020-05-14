@@ -41,11 +41,8 @@
 			the_title( '<h1 class="entry-title">', '</h1>' );
 			else :
 				the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
-						//the_date( 'F j, Y', '<span>', '</span>',true);
-						echo '<span class="date">'.get_the_date().'</span>';
-						
-
 			endif;
+			echo '<span class="date">'.get_the_date().'</span>';
 			?>
 	</header><!-- .entry-header -->
 

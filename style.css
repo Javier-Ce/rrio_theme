@@ -410,7 +410,8 @@ footer .site-info {
 
 .site-title a,
 h1.page-title,
-.site-info span {
+.site-info span,
+.single h1 {
   font-weight: bold; }
 
 .wp-tag-cloud li,
@@ -422,6 +423,9 @@ h1.page-title,
     padding: 2px 8px !important;
     margin: 0 0 0 0 !important; }
 
+.page-title, .taxonomy-description {
+  margin-left: 0; }
+
 .site-title a:hover,
 .wp-tag-cloud li a:hover,
 .tags-links a:hover {
@@ -429,6 +433,9 @@ h1.page-title,
 
 .tags-links a:before {
   content: none; }
+
+.cat-item.current-cat, .cat-item:hover {
+  background-color: Silver; }
 
 /**
  * 12.1 Posts and pages
@@ -453,13 +460,14 @@ h1.page-title,
     body .site .sidebar {
       max-width: none !important; }
       body .site .sidebar .site-header {
-        border-right: 1px solid Silver;
+        line-height: 1;
         margin-top: 4rem;
         padding: 0 30% 0 10%;
         margin-bottom: 12%; }
         body .site .sidebar .site-header .custom-logo {
           width: 80px; }
         body .site .sidebar .site-header .site-title, body .site .sidebar .site-header .site-description {
+          line-height: 1;
           display: inline-block; }
         body .site .sidebar .site-header .site-description {
           margin-top: 0; }
@@ -474,8 +482,6 @@ h1.page-title,
         border-radius: 20px;
         padding: 1px 12px !important;
         margin: 0 0 6px 0 !important; }
-      body .site .sidebar .widget-area .widget_categories .cat-item.current-cat, body .site .sidebar .widget-area .widget_categories .cat-item:hover {
-        background-color: Silver; }
       body .site .sidebar .widget-area .widget {
         padding: 0 30% 0 10%;
         margin-bottom: 12%; }
@@ -565,6 +571,9 @@ h1.page-title,
             position: static; }
           body .site .site-content .site-main nav.navigation.pagination .nav-links .page-numbers.prev:before, body .site .site-content .site-main nav.navigation.pagination .nav-links .page-numbers.next:before {
             content: none; }
+          body .site .site-content .site-main nav.navigation.pagination .nav-links .page-numbers.current, body .site .site-content .site-main nav.navigation.pagination .nav-links .page-numbers:hover {
+            background-color: Silver;
+            font-weight: 300; }
     body .site .site-footer {
       box-shadow: none;
       margin-left: 29.4118%;
@@ -578,12 +587,12 @@ h1.page-title,
     margin: 0 0% 0% 0% !important;
     margin-bottom: 5% !important;
     padding-bottom: 5%; }
-  body.blog h2, body.archive h2 {
+  body.blog article .entry-title, body.archive article .entry-title, body.single article .entry-title {
     display: inline-block; }
-  body.blog h2:after, body.archive h2:after {
+  body.blog article .entry-title:after, body.archive article .entry-title:after, body.single article .entry-title:after {
     content: ', ';
     margin-right: 0.25em; }
-  body.blog .date, body.archive .date {
+  body.blog article .date, body.archive article .date, body.single article .date {
     margin-left: 0.25em;
     text-transform: capitalize; }
   body.single .site-content {
@@ -597,6 +606,16 @@ h1.page-title,
       margin: 0 !important; }
       body.single .site-content article.hentry .entry-header {
         margin-top: 1em; }
+      body.single .site-content article.hentry .entry-footer .cat-links a {
+        border: 1px solid DarkBlue !important;
+        display: inline-block;
+        border-radius: 20px;
+        padding: 1px 12px !important;
+        margin: 0 0 6px 0 !important; }
+      body.single .site-content article.hentry .entry-footer .cat-links a:hover {
+        background-color: Silver; }
+      body.single .site-content article.hentry .entry-footer .posted-on {
+        display: none; }
     body.single .site-content .navigation.post-navigation {
       position: absolute;
       right: 0;
@@ -618,7 +637,16 @@ h1.page-title,
         body.single .site-content .navigation.post-navigation .nav-previous .meta-nav, body.single .site-content .navigation.post-navigation .nav-next .meta-nav {
           text-transform: capitalize; }
       body.single .site-content .navigation.post-navigation .nav-previous :hover, body.single .site-content .navigation.post-navigation .nav-next :hover {
-        background-color: Silver; } }
+        background-color: Silver; }
+      body.single .site-content .navigation.post-navigation .nav-previous {
+        text-align: left; }
+        body.single .site-content .navigation.post-navigation .nav-previous a:after {
+          content: "\2190"; }
+      body.single .site-content .navigation.post-navigation .nav-next {
+        text-align: right; }
+        body.single .site-content .navigation.post-navigation .nav-next a:after {
+          font-size: 1.125em;
+          content: "\2192"; } }
 
 /**
  * 16.2 Tablet Small 740px
