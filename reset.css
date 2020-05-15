@@ -1,0 +1,420 @@
+/*
+ Theme Name:   Twenty Fifteen Child
+ Theme URI:    http://example.com/twenty-fourteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+/**
+ * 3.0 Typography
+ */
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  body a:hover,
+  button a:hover,
+  input a:hover,
+  select a:hover,
+  textarea a:hover {
+    border-color: Grey; }
+
+blockquote cite,
+blockquote small {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  blockquote cite a:hover,
+  blockquote small a:hover {
+    border-color: Grey; }
+
+::-webkit-input-placeholder {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  ::-webkit-input-placeholder a:hover {
+    border-color: Grey; }
+
+:-moz-placeholder {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  :-moz-placeholder a:hover {
+    border-color: Grey; }
+
+::-moz-placeholder {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1;
+  opacity: 1;
+  /* Since FF19 lowers the opacity of the placeholder by default */ }
+  ::-moz-placeholder a:hover {
+    border-color: Grey; }
+
+:-ms-input-placeholder {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  :-ms-input-placeholder a:hover {
+    border-color: Grey; }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  button a:hover,
+  input[type="button"] a:hover,
+  input[type="reset"] a:hover,
+  input[type="submit"] a:hover {
+    border-color: Grey; }
+
+.post-password-form label {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .post-password-form label a:hover {
+    border-color: Grey; }
+
+.main-navigation .menu-item-description {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .main-navigation .menu-item-description a:hover {
+    border-color: Grey; }
+
+.post-navigation .meta-nav {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .post-navigation .meta-nav a:hover {
+    border-color: Grey; }
+
+.post-navigation .post-title {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .post-navigation .post-title a:hover {
+    border-color: Grey; }
+
+.pagination {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .pagination a:hover {
+    border-color: Grey; }
+
+.image-navigation,
+.comment-navigation {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .image-navigation a:hover,
+  .comment-navigation a:hover {
+    border-color: Grey; }
+
+.site-title {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .site-title a:hover {
+    border-color: Grey; }
+
+.site-description {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .site-description a:hover {
+    border-color: Grey; }
+
+.widget {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .widget a:hover {
+    border-color: Grey; }
+  .widget .widget-title, .widget a {
+    font-size: 1.5125rem !important;
+    color: DarkBlue !important;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    opacity: 1; }
+    .widget .widget-title a:hover, .widget a a:hover {
+      border-color: Grey; }
+
+.wp-tag-cloud a.tag-cloud-link {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .wp-tag-cloud a.tag-cloud-link a:hover {
+    border-color: Grey; }
+
+.widget_calendar {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .widget_calendar caption, .widget_calendar tbody, .widget_calendar tr, .widget_calendar td, .widget_calendar td a {
+    font-size: 1.5125rem !important;
+    color: DarkBlue !important;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    opacity: 1; }
+    .widget_calendar caption a:hover, .widget_calendar tbody a:hover, .widget_calendar tr a:hover, .widget_calendar td a:hover, .widget_calendar td a a:hover {
+      border-color: Grey; }
+  .widget_calendar a:hover {
+    border-color: Grey; }
+
+.widget_rss .rss-date,
+.widget_rss cite {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .widget_rss .rss-date a:hover,
+  .widget_rss cite a:hover {
+    border-color: Grey; }
+
+.author-heading {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .author-heading a:hover {
+    border-color: Grey; }
+
+.entry-footer {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .entry-footer a:hover {
+    border-color: Grey; }
+
+.page-title {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .page-title a:hover {
+    border-color: Grey; }
+
+.page-links {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .page-links a:hover {
+    border-color: Grey; }
+
+.entry-caption {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .entry-caption a:hover {
+    border-color: Grey; }
+
+.comments-title,
+.comment-reply-title {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .comments-title a:hover,
+  .comment-reply-title a:hover {
+    border-color: Grey; }
+
+.comment-metadata,
+.pingback .edit-link {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .comment-metadata a:hover,
+  .pingback .edit-link a:hover {
+    border-color: Grey; }
+
+.comment-list .reply a {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .comment-list .reply a a:hover {
+    border-color: Grey; }
+
+.comment-form label {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .comment-form label a:hover {
+    border-color: Grey; }
+
+.comment-notes,
+.comment-awaiting-moderation,
+.logged-in-as,
+.form-allowed-tags {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .comment-notes a:hover,
+  .comment-awaiting-moderation a:hover,
+  .logged-in-as a:hover,
+  .form-allowed-tags a:hover {
+    border-color: Grey; }
+
+.no-comments {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .no-comments a:hover {
+    border-color: Grey; }
+
+.form-allowed-tags code {
+  font-family: Inconsolata, monospace; }
+
+.wp-caption-text {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .wp-caption-text a:hover {
+    border-color: Grey; }
+
+.widecolumn label,
+.widecolumn .mu_register label {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .widecolumn label a:hover,
+  .widecolumn .mu_register label a:hover {
+    border-color: Grey; }
+
+h1.entry-title, h2.entry-title {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  h1.entry-title a:hover, h2.entry-title a:hover {
+    border-color: Grey; }
+
+h2.entry-title a, .entry-content a, .entry-footer a {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  h2.entry-title a a:hover, .entry-content a a:hover, .entry-footer a a:hover {
+    border-color: Grey; }
+
+.site-title a {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .site-title a a:hover {
+    border-color: Grey; }
+
+footer .site-info {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  footer .site-info a:hover {
+    border-color: Grey; }
+  footer .site-info a {
+    font-size: 1.5125rem !important;
+    color: DarkBlue !important;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    opacity: 1; }
+    footer .site-info a a:hover {
+      border-color: Grey; }
+
+body .site .sidebar .site-header {
+  border: none !important; }
+  body .site .sidebar .site-header .secondary-toggle {
+    border: none !important; }
+
+body .site .sidebar .secondary .widget-area .widget.widget_tag_cloud .widget-title {
+  border: none !important; }
+
+body .site .sidebar .secondary .widget-area #calendar_wrap table, body .site .sidebar .secondary .widget-area th, body .site .sidebar .secondary .widget-area td {
+  border: none !important; }
+
+body .site .site-content .hentry, body .site .site-content .post-navigation, body .site .site-content .pagination {
+  border: none !important; }
+
+body .site .site-content .site-main header.page-header {
+  border: none !important; }
+
+body .site .site-footer {
+  border: none !important; }

@@ -1,0 +1,211 @@
+/*
+ Theme Name:   Twenty Fifteen Child
+ Theme URI:    http://example.com/twenty-fourteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+
+/**
+ * 3.0 Typography
+ */
+$color:DarkBlue;
+$color2: Silver;
+$fontWeight:300;
+$MarginTop:4rem;
+$widget_interspace:12%;
+
+@mixin Reset_Typography(){
+	font-size: 1.5125rem !important;
+	color: $color !important;
+	font-family: Helvetica, sans-serif;
+	font-weight: $fontWeight;
+	opacity: 1;
+	a:hover{ border-color: Grey;}
+}
+@mixin borderNone(){
+	border: none !important;
+}
+
+
+
+body,
+button,
+input,
+select,
+textarea {
+	@include Reset_Typography();
+}
+
+blockquote cite,
+blockquote small {
+	@include Reset_Typography();
+}
+
+::-webkit-input-placeholder {
+	@include Reset_Typography();
+}
+:-moz-placeholder {
+	@include Reset_Typography();
+}
+::-moz-placeholder {
+	@include Reset_Typography();
+	opacity: 1; /* Since FF19 lowers the opacity of the placeholder by default */
+}
+:-ms-input-placeholder {
+	@include Reset_Typography();
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include Reset_Typography();
+}
+.post-password-form label {
+	@include Reset_Typography();
+}
+.main-navigation .menu-item-description {
+	@include Reset_Typography();
+}
+.post-navigation .meta-nav {
+	@include Reset_Typography();
+}
+.post-navigation .post-title {
+	@include Reset_Typography();
+}
+.pagination {
+	@include Reset_Typography();
+}
+.image-navigation,
+.comment-navigation {
+	@include Reset_Typography();
+}
+.site-title {
+	@include Reset_Typography();
+}
+.site-description {
+	@include Reset_Typography();
+}
+.widget {
+	@include Reset_Typography();
+	.widget-title, a {@include Reset_Typography();}
+}
+.wp-tag-cloud{
+	//display: none;
+	a.tag-cloud-link{
+		@include Reset_Typography();
+		//color:red !important;
+	}
+}
+.widget_calendar{
+	caption,tbody,tr,td, td a{ @include Reset_Typography();}
+	@include Reset_Typography();
+}
+.widget_rss .rss-date,
+.widget_rss cite {
+	@include Reset_Typography();
+}
+.author-heading {
+	@include Reset_Typography();
+}
+.entry-footer {
+	@include Reset_Typography();
+}
+.page-title {
+	@include Reset_Typography();
+}
+.page-links {
+	@include Reset_Typography();
+}
+.entry-caption {
+	@include Reset_Typography();
+}
+.comments-title,
+.comment-reply-title {
+	@include Reset_Typography();
+}
+.comment-metadata,
+.pingback .edit-link {
+	@include Reset_Typography();
+}
+.comment-list .reply a {
+	@include Reset_Typography();
+}
+.comment-form label {
+	@include Reset_Typography();
+}
+.comment-notes,
+.comment-awaiting-moderation,
+.logged-in-as,
+.form-allowed-tags {
+	@include Reset_Typography();
+}
+.no-comments {
+	@include Reset_Typography();
+}
+.form-allowed-tags code {
+	font-family: Inconsolata, monospace;
+}
+.wp-caption-text {
+	@include Reset_Typography();
+}
+.widecolumn label,
+.widecolumn .mu_register label {
+	@include Reset_Typography();
+}
+h1.entry-title,h2.entry-title{
+	@include Reset_Typography();
+}
+h2.entry-title, .entry-content, .entry-footer{
+	a{
+		@include Reset_Typography();
+	}
+}
+.site-title a{
+	@include Reset_Typography();
+}
+footer .site-info{
+	@include Reset_Typography();
+	a{@include Reset_Typography();}
+}
+
+
+body{
+	.site{
+		.sidebar{
+			.site-header{
+				@include borderNone();
+				.secondary-toggle{ @include borderNone(); }
+			}
+			.secondary{
+				.widget-area{
+					.widget.widget_tag_cloud .widget-title{
+						@include borderNone();
+					}
+					#calendar_wrap table,th,td{@include borderNone();}	
+				}
+			}
+		}
+		.site-content{
+			.hentry,.post-navigation,.pagination{ @include borderNone();}
+			.site-main{
+				header.page-header{
+					@include borderNone();
+				}
+			}
+
+		}
+		.site-footer{
+			@include borderNone();
+		}
+	}
+}
+
+
+
