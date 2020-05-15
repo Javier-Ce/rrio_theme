@@ -19,6 +19,7 @@ $MarginTop:4rem;
 $widget_interspace:12%;
 $border: 1px solid $color !important;
 $gut: 4%;
+$fixMargin:5px;
 
 @mixin Borders(){
 	border-bottom: $border;
@@ -41,6 +42,7 @@ $gut: 4%;
 @mixin Taghover(){
 	background-color:$color2;
 }
+
 //
 .posted-on:before, .cat-links:before, .tags-links:before, .edit-link:before {
 	content:"";
@@ -54,16 +56,14 @@ h1.page-title,
 .single h1{
 	font-weight:bold;
 }
-
-.wp-tag-cloud li,
-.tags-links{
-	margin-bottom: 5px;	
+.wp-tag-cloud li, .tags-links{
+	margin-bottom: $fixMargin;	
 	a{
 		@include Tag();
 		&:hover{@include Taghover();}
 	}
 }
-.cat-item{
+.cat-item,.cat-links a{
 	@include Cat();
 	&:hover{ @include Taghover(); }
 }
@@ -74,9 +74,6 @@ h1.page-title,
 /**
  * 12.1 Posts and pages
  */
-
-
-
 // -> SPACING_______________________________________________________________________________________________________________
 body{
 	&:before{
@@ -88,23 +85,19 @@ body{
 		max-width: none;
 
 		.page-header,
-		.page-header,
 		.site-header,
 		.site-info,
 		.secondary,
 		nav.navigation.pagination,
-		.navigation.post-navigation{
-			padding: 0 $gut;
-		}
+		.navigation.post-navigation{ padding: 0 $gut;}
+
 		.hentry:nth-child(odd){ padding: 0 $gut 0 $gut/2; }
 		.hentry:nth-child(even){ padding: 0 $gut/2 0 $gut; }
+		.hentry{ margin: 0 0% $MarginTop*2 0;}
 
-		.site-header, .site-footer{
-			margin: $MarginTop 0 $widget_interspace 0;
-		}
+		.site-header, .site-footer{ margin: $MarginTop 0 $widget_interspace 0;}
 
 		.sidebar{
-			
 			max-width: none !important;
 			.site-header{
 				line-height: 2;
@@ -112,8 +105,8 @@ body{
 				.site-title, .site-description{
 					line-height: 1;
 					display: inline-block;
+					margin-top: 0;
 				}
-				.site-description{ margin-top: 0; }
 			}
 			.secondary{
 				.widget-area{
@@ -130,26 +123,24 @@ body{
 		.site-content{
 			.site-main{
 				padding-top:0 !important;
+				.page-header{ margin:0 0 $MarginTop*2 0 ; }
 				article{
 					float: left;
 					width: 50%;
 					a.post-thumbnail{
 						img{ margin:0; }
-						margin-bottom: 1em;
+						margin: 0;
 					}
-					h1,h2{
-						margin-bottom: 0;
+					.entry-header{ margin-top: $fixMargin*2; }
+					.entry-header, .entry-content, .entry-footer{ padding:0; }
+					.entry-header .entry-title{
+						margin: 0;
+						a.post-thumbnail{ margin: 0; }
+						//padding: 0 !important;
 					}
-					.entry-header, .entry-content, .entry-footer{
-						padding:0;
-					}
-				}
-				.page-header,.hentry, .hentry + .hentry, .page-header + .hentry, .page-header + .page-content{
-					margin: 0 0% 10% 0;
 				}
 			}
 		}
-
 		.site-footer{
 			width:100%;
 			padding:0 !important;
@@ -161,8 +152,6 @@ body.blog .site-content{
 		.hentry:first-of-type{
 			float: none;
 			width:auto;
-			@include Margins();
-			margin-bottom: $gut !important;
 	    	padding: 0 $gut 0 $gut !important;
 		}
 	}
@@ -171,8 +160,6 @@ body.blog .site-content{
 body.single .site-content{
 	article.hentry{	
 		width: 100%;
-		margin: 0 0 2em 0 !important;
-		.entry-header{ margin-top: 1em; }
 		padding: 0 $gut 0 $gut !important;
 	}
 	.navigation.post-navigation{
@@ -180,6 +167,10 @@ body.single .site-content{
 		.nav-previous, .nav-next{
 			width: 50%;
 			display: inline-block;
+		}
+		.nav-next {
+			position:relative;
+			left: -1px;
 		}
 	}
 }
@@ -189,22 +180,32 @@ body.single .site-content{
 @media screen and (min-width: 59.6875em) {
 	body{
 		.site{
+			.site-header{
+				padding-bottom:0;
+				margin-bottom: $MarginTop*2;
+			}
+
+			.page-header,
+			.hentry:nth-child(odd),.hentry:nth-child(even){ padding: 0 $gut/2 0 $gut; }
+			
 			.sidebar{
 				.site-header{line-height: 1;}
-				.site-header,.secondary{ padding: 0 30% 0 10%; }
+				.site-header,.secondary{ padding: 0 $widget_interspace 0 $widget_interspace; }
 			}
 			.site-content, .site-footer{ padding: 0 0 0 0 !important; }
-			///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 			.site-content{
 				.site-main{
 					margin-top:$MarginTop;
 					article{ width: auto; }
 				}
 			}
+
 			.site-footer{
 				margin-left: 29.4118%;
 				width:70.5882%;
 			}
+
 		}
 	}
 	body.single{
@@ -215,14 +216,18 @@ body.single .site-content{
 				float: left;
 			}
 			.navigation.post-navigation{
+				padding:0;
 				position: absolute;
 				right:0;
 				width:14.4118%;
 				.nav-previous, .nav-next{
 					width: 100%;
 					float:none;
-					margin-bottom: 5px;
 					padding-right: 20%;
+				}
+				.nav-next{
+					left: initial;
+					top:-1px;
 				}
 			}
 			article.hentry{	
@@ -337,6 +342,31 @@ body{
 			}
 		}
 		.site-footer{ box-shadow:none;}
+
+		.navigation.post-navigation{
+			background-color:transparent;
+			box-shadow:none;
+			text-transform: capitalize;
+			.nav-previous, .nav-next{
+				background-image: none;
+				a{
+					@include Tag();
+					&:hover{ @include Taghover(); }
+					&:before{ background-color:transparent; }
+				}
+				.meta-nav{
+					text-transform: capitalize;
+				}
+			}
+			.nav-previous{
+				text-align: left;
+				a:after{ content: "\2190"; }
+			}
+			.nav-next {
+				text-align: right;
+				a:after{ content: "\2192"; }
+			}
+		}
 		// <- STYLING
 	}
 }
@@ -352,34 +382,9 @@ article{
 		text-transform: capitalize;
 	}
 }
-.cat-links a { @include Cat();}
+
 .posted-on{	display: none;}
-.navigation.post-navigation{
-	background-color:transparent;
-	box-shadow:none;
-	text-transform: capitalize;
-	.nav-previous, .nav-next{
-		background-image: none;
-		a{
-			@include Tag();
-			&:hover{ @include Taghover(); }
-			&:before{ background-color:transparent; }
-		}
-		.meta-nav{
-			text-transform: capitalize;
-		}
-	}
-	.nav-previous{
-		text-align: left;
-		a:after{ content: "\2190"; }
-	}
-	.nav-next {
-		position:relative;
-		left: -1px;
-		text-align: right;
-		a:after{ content: "\2192"; }
-	}
-}
+
 
 
 /**

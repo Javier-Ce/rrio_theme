@@ -23,25 +23,22 @@ h1.page-title,
 .single h1 {
   font-weight: bold; }
 
-.wp-tag-cloud li,
-.tags-links {
+.wp-tag-cloud li, .tags-links {
   margin-bottom: 5px; }
-  .wp-tag-cloud li a,
-  .tags-links a {
+  .wp-tag-cloud li a, .tags-links a {
     border: 1px solid DarkBlue !important;
     padding: 2px 8px !important;
     margin: 0 0 0 0 !important; }
-    .wp-tag-cloud li a:hover,
-    .tags-links a:hover {
+    .wp-tag-cloud li a:hover, .tags-links a:hover {
       background-color: Silver; }
 
-.cat-item {
+.cat-item, .cat-links a {
   border: 1px solid DarkBlue !important;
   display: inline-block;
   border-radius: 20px;
   padding: 1px 12px !important;
   margin-bottom: 5px; }
-  .cat-item:hover {
+  .cat-item:hover, .cat-links a:hover {
     background-color: Silver; }
 
 .page-title, .taxonomy-description {
@@ -63,7 +60,6 @@ body:before {
 body .site {
   max-width: none; }
   body .site .page-header,
-  body .site .page-header,
   body .site .site-header,
   body .site .site-info,
   body .site .secondary,
@@ -74,6 +70,8 @@ body .site {
     padding: 0 4% 0 2%; }
   body .site .hentry:nth-child(even) {
     padding: 0 2% 0 4%; }
+  body .site .hentry {
+    margin: 0 0% 8rem 0; }
   body .site .site-header, body .site .site-footer {
     margin: 4rem 0 12% 0; }
   body .site .sidebar {
@@ -84,8 +82,7 @@ body .site {
         width: 80px; }
       body .site .sidebar .site-header .site-title, body .site .sidebar .site-header .site-description {
         line-height: 1;
-        display: inline-block; }
-      body .site .sidebar .site-header .site-description {
+        display: inline-block;
         margin-top: 0; }
     body .site .sidebar .secondary .widget-area .widget {
       padding: 0;
@@ -96,19 +93,23 @@ body .site {
         margin: 0; }
   body .site .site-content .site-main {
     padding-top: 0 !important; }
+    body .site .site-content .site-main .page-header {
+      margin: 0 0 8rem 0; }
     body .site .site-content .site-main article {
       float: left;
       width: 50%; }
       body .site .site-content .site-main article a.post-thumbnail {
-        margin-bottom: 1em; }
+        margin: 0; }
         body .site .site-content .site-main article a.post-thumbnail img {
           margin: 0; }
-      body .site .site-content .site-main article h1, body .site .site-content .site-main article h2 {
-        margin-bottom: 0; }
+      body .site .site-content .site-main article .entry-header {
+        margin-top: 10px; }
       body .site .site-content .site-main article .entry-header, body .site .site-content .site-main article .entry-content, body .site .site-content .site-main article .entry-footer {
         padding: 0; }
-    body .site .site-content .site-main .page-header, body .site .site-content .site-main .hentry, body .site .site-content .site-main .hentry + .hentry, body .site .site-content .site-main .page-header + .hentry, body .site .site-content .site-main .page-header + .page-content {
-      margin: 0 0% 10% 0; }
+      body .site .site-content .site-main article .entry-header .entry-title {
+        margin: 0; }
+        body .site .site-content .site-main article .entry-header .entry-title a.post-thumbnail {
+          margin: 0; }
   body .site .site-footer {
     width: 100%;
     padding: 0 !important; }
@@ -116,31 +117,35 @@ body .site {
 body.blog .site-content .site-main .hentry:first-of-type {
   float: none;
   width: auto;
-  margin: 0 0% 0% 0% !important;
-  margin-bottom: 4% !important;
   padding: 0 4% 0 4% !important; }
 
 body.single .site-content article.hentry {
   width: 100%;
-  margin: 0 0 2em 0 !important;
   padding: 0 4% 0 4% !important; }
-  body.single .site-content article.hentry .entry-header {
-    margin-top: 1em; }
 
 body.single .site-content .navigation.post-navigation {
   margin: 0 !important; }
   body.single .site-content .navigation.post-navigation .nav-previous, body.single .site-content .navigation.post-navigation .nav-next {
     width: 50%;
     display: inline-block; }
+  body.single .site-content .navigation.post-navigation .nav-next {
+    position: relative;
+    left: -1px; }
 
 /**
 16.4 Desktop Small 955px
 */
 @media screen and (min-width: 59.6875em) {
+  body .site .site-header {
+    padding-bottom: 0;
+    margin-bottom: 8rem; }
+  body .site .page-header,
+  body .site .hentry:nth-child(odd), body .site .hentry:nth-child(even) {
+    padding: 0 2% 0 4%; }
   body .site .sidebar .site-header {
     line-height: 1; }
   body .site .sidebar .site-header, body .site .sidebar .secondary {
-    padding: 0 30% 0 10%; }
+    padding: 0 12% 0 12%; }
   body .site .site-content, body .site .site-footer {
     padding: 0 0 0 0 !important; }
   body .site .site-content .site-main {
@@ -156,14 +161,17 @@ body.single .site-content .navigation.post-navigation {
     body.single .site-content .hentry, body.single .site-content .post-navigation {
       float: left; }
     body.single .site-content .navigation.post-navigation {
+      padding: 0;
       position: absolute;
       right: 0;
       width: 14.4118%; }
       body.single .site-content .navigation.post-navigation .nav-previous, body.single .site-content .navigation.post-navigation .nav-next {
         width: 100%;
         float: none;
-        margin-bottom: 5px;
         padding-right: 20%; }
+      body.single .site-content .navigation.post-navigation .nav-next {
+        left: initial;
+        top: -1px; }
     body.single .site-content article.hentry .entry-footer .cat-links a:hover {
       background-color: Silver; } }
 
@@ -261,6 +269,31 @@ body .site .site-content .site-main nav.navigation.pagination {
 body .site .site-footer {
   box-shadow: none; }
 
+body .site .navigation.post-navigation {
+  background-color: transparent;
+  box-shadow: none;
+  text-transform: capitalize; }
+  body .site .navigation.post-navigation .nav-previous, body .site .navigation.post-navigation .nav-next {
+    background-image: none; }
+    body .site .navigation.post-navigation .nav-previous a, body .site .navigation.post-navigation .nav-next a {
+      border: 1px solid DarkBlue !important;
+      padding: 2px 8px !important;
+      margin: 0 0 0 0 !important; }
+      body .site .navigation.post-navigation .nav-previous a:hover, body .site .navigation.post-navigation .nav-next a:hover {
+        background-color: Silver; }
+      body .site .navigation.post-navigation .nav-previous a:before, body .site .navigation.post-navigation .nav-next a:before {
+        background-color: transparent; }
+    body .site .navigation.post-navigation .nav-previous .meta-nav, body .site .navigation.post-navigation .nav-next .meta-nav {
+      text-transform: capitalize; }
+  body .site .navigation.post-navigation .nav-previous {
+    text-align: left; }
+    body .site .navigation.post-navigation .nav-previous a:after {
+      content: "\2190"; }
+  body .site .navigation.post-navigation .nav-next {
+    text-align: right; }
+    body .site .navigation.post-navigation .nav-next a:after {
+      content: "\2192"; }
+
 article .entry-title {
   display: inline-block; }
 
@@ -272,42 +305,8 @@ article .date {
   margin-left: 0.25em;
   text-transform: capitalize; }
 
-.cat-links a {
-  border: 1px solid DarkBlue !important;
-  display: inline-block;
-  border-radius: 20px;
-  padding: 1px 12px !important;
-  margin-bottom: 5px; }
-
 .posted-on {
   display: none; }
-
-.navigation.post-navigation {
-  background-color: transparent;
-  box-shadow: none;
-  text-transform: capitalize; }
-  .navigation.post-navigation .nav-previous, .navigation.post-navigation .nav-next {
-    background-image: none; }
-    .navigation.post-navigation .nav-previous a, .navigation.post-navigation .nav-next a {
-      border: 1px solid DarkBlue !important;
-      padding: 2px 8px !important;
-      margin: 0 0 0 0 !important; }
-      .navigation.post-navigation .nav-previous a:hover, .navigation.post-navigation .nav-next a:hover {
-        background-color: Silver; }
-      .navigation.post-navigation .nav-previous a:before, .navigation.post-navigation .nav-next a:before {
-        background-color: transparent; }
-    .navigation.post-navigation .nav-previous .meta-nav, .navigation.post-navigation .nav-next .meta-nav {
-      text-transform: capitalize; }
-  .navigation.post-navigation .nav-previous {
-    text-align: left; }
-    .navigation.post-navigation .nav-previous a:after {
-      content: "\2190"; }
-  .navigation.post-navigation .nav-next {
-    position: relative;
-    left: -1px;
-    text-align: right; }
-    .navigation.post-navigation .nav-next a:after {
-      content: "\2192"; }
 
 /**
  * 13.0 Footer
