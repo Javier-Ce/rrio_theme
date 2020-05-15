@@ -124,11 +124,14 @@ body{
 			.site-main{
 				padding-top:0 !important;
 				.page-header{ margin:0 0 $MarginTop*2 0 ; }
-				article{
+				.hentry{
 					float: left;
 					width: 50%;
 					a.post-thumbnail{
-						img{ margin:0; }
+						img{ 
+							margin:0;
+							width:100%;
+						}
 						margin: 0;
 					}
 					.entry-header{ margin-top: $fixMargin*2; }
@@ -153,6 +156,9 @@ body.blog .site-content{
 			float: none;
 			width:auto;
 	    	padding: 0 $gut 0 $gut !important;
+	    	a.post-thumbnail{
+	    		img{ width:auto; }
+	    	}
 		}
 	}
 }
@@ -197,7 +203,6 @@ body.single .site-content{
 			.site-content{
 				.site-main{
 					margin-top:$MarginTop;
-					article{ width: auto; }
 				}
 			}
 
@@ -326,6 +331,7 @@ body{
 							display: inline-block;
 							vertical-align:bottom;
 							padding: 1em;
+							span.meta-nav{ display: none; }
 						}
 						.page-numbers.next, .page-numbers.prev{
 							position: static;
@@ -396,7 +402,8 @@ article{
 /**
  * 16.1 Mobile Large 620px
  */
-//@media screen and (min-width: 38.75em) {
+@media screen and (min-width: 38.75em) {
+}
 /**
  * 16.2 Tablet Small 740px
  */
@@ -416,6 +423,15 @@ article{
  * 16.5 Desktop Medium 1100px
  */
 @media screen and (min-width: 68.75em) {
+	body{
+		.site{
+			.site-content{
+				.site-main{
+					.hentry{ width: auto; }
+				}
+			}
+		}
+	}
 }
 /**
  * 16.6 Desktop Large 1240px

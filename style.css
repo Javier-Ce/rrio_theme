@@ -95,20 +95,21 @@ body .site {
     padding-top: 0 !important; }
     body .site .site-content .site-main .page-header {
       margin: 0 0 8rem 0; }
-    body .site .site-content .site-main article {
+    body .site .site-content .site-main .hentry {
       float: left;
       width: 50%; }
-      body .site .site-content .site-main article a.post-thumbnail {
+      body .site .site-content .site-main .hentry a.post-thumbnail {
         margin: 0; }
-        body .site .site-content .site-main article a.post-thumbnail img {
-          margin: 0; }
-      body .site .site-content .site-main article .entry-header {
+        body .site .site-content .site-main .hentry a.post-thumbnail img {
+          margin: 0;
+          width: 100%; }
+      body .site .site-content .site-main .hentry .entry-header {
         margin-top: 10px; }
-      body .site .site-content .site-main article .entry-header, body .site .site-content .site-main article .entry-content, body .site .site-content .site-main article .entry-footer {
+      body .site .site-content .site-main .hentry .entry-header, body .site .site-content .site-main .hentry .entry-content, body .site .site-content .site-main .hentry .entry-footer {
         padding: 0; }
-      body .site .site-content .site-main article .entry-header .entry-title {
+      body .site .site-content .site-main .hentry .entry-header .entry-title {
         margin: 0; }
-        body .site .site-content .site-main article .entry-header .entry-title a.post-thumbnail {
+        body .site .site-content .site-main .hentry .entry-header .entry-title a.post-thumbnail {
           margin: 0; }
   body .site .site-footer {
     width: 100%;
@@ -118,6 +119,8 @@ body.blog .site-content .site-main .hentry:first-of-type {
   float: none;
   width: auto;
   padding: 0 4% 0 4% !important; }
+  body.blog .site-content .site-main .hentry:first-of-type a.post-thumbnail img {
+    width: auto; }
 
 body.single .site-content article.hentry {
   width: 100%;
@@ -150,8 +153,6 @@ body.single .site-content .navigation.post-navigation {
     padding: 0 0 0 0 !important; }
   body .site .site-content .site-main {
     margin-top: 4rem; }
-    body .site .site-content .site-main article {
-      width: auto; }
   body .site .site-footer {
     margin-left: 29.4118%;
     width: 70.5882%; }
@@ -258,6 +259,8 @@ body .site .site-content .site-main nav.navigation.pagination {
       display: inline-block;
       vertical-align: bottom;
       padding: 1em; }
+      body .site .site-content .site-main nav.navigation.pagination .nav-links .page-numbers span.meta-nav {
+        display: none; }
     body .site .site-content .site-main nav.navigation.pagination .nav-links .page-numbers.next, body .site .site-content .site-main nav.navigation.pagination .nav-links .page-numbers.prev {
       position: static; }
     body .site .site-content .site-main nav.navigation.pagination .nav-links .page-numbers.prev:before, body .site .site-content .site-main nav.navigation.pagination .nav-links .page-numbers.next:before {
@@ -329,6 +332,10 @@ article .date {
 /**
  * 16.5 Desktop Medium 1100px
  */
+@media screen and (min-width: 68.75em) {
+  body .site .site-content .site-main .hentry {
+    width: auto; } }
+
 /**
  * 16.6 Desktop Large 1240px
  */
