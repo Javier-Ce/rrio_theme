@@ -164,19 +164,21 @@ body.blog .site-content{
 }
 
 body.single .site-content{
-	article.hentry{	
-		width: 100%;
-		padding: 0 $gut 0 $gut !important;
-	}
-	.navigation.post-navigation{
-		margin:0 !important; 
-		.nav-previous, .nav-next{
-			width: 50%;
-			display: inline-block;
+	.site-main{
+		article.hentry{	
+			width: 100%;
+			padding: 0 $gut 0 $gut !important;
 		}
-		.nav-next {
-			position:relative;
-			left: -1px;
+		.navigation.post-navigation{
+			margin:0 !important; 
+			.nav-previous, .nav-next{
+				width: 50%;
+				display: inline-block;
+			}
+			.nav-next {
+				position:relative;
+				left: -1px;
+			}
 		}
 	}
 }
@@ -215,30 +217,32 @@ body.single .site-content{
 	}
 	body.single{
 		.site-content{
-			margin-right: 29.4118%;
-			width:55.5882%;
-			.hentry,.post-navigation{
-				float: left;
-			}
-			.navigation.post-navigation{
-				padding:0;
-				position: absolute;
-				right:0;
-				width:14.4118%;
-				.nav-previous, .nav-next{
-					width: 100%;
-					float:none;
-					padding-right: 20%;
+			.site-main{
+				margin-right: 29.4118%;
+				width:55.5882%;
+				.hentry,.post-navigation{
+					float: left;
 				}
-				.nav-next{
-					left: initial;
-					top:-1px;
+				.navigation.post-navigation{
+					padding:0;
+					position: absolute;
+					right:0;
+					width:14.4118%;
+					.nav-previous, .nav-next{
+						width: 100%;
+						float:none;
+						padding-right: 20%;
+					}
+					.nav-next{
+						left: initial;
+						top:-1px;
+					}
 				}
-			}
-			article.hentry{	
-				.entry-footer{	
-					.cat-links a:hover {
-						@include Taghover();
+				article.hentry{	
+					.entry-footer{	
+						.cat-links a:hover {
+							@include Taghover();
+						}
 					}
 				}
 			}

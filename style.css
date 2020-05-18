@@ -122,16 +122,16 @@ body.blog .site-content .site-main .hentry:first-of-type {
   body.blog .site-content .site-main .hentry:first-of-type a.post-thumbnail img {
     width: auto; }
 
-body.single .site-content article.hentry {
+body.single .site-content .site-main article.hentry {
   width: 100%;
   padding: 0 4% 0 4% !important; }
 
-body.single .site-content .navigation.post-navigation {
+body.single .site-content .site-main .navigation.post-navigation {
   margin: 0 !important; }
-  body.single .site-content .navigation.post-navigation .nav-previous, body.single .site-content .navigation.post-navigation .nav-next {
+  body.single .site-content .site-main .navigation.post-navigation .nav-previous, body.single .site-content .site-main .navigation.post-navigation .nav-next {
     width: 50%;
     display: inline-block; }
-  body.single .site-content .navigation.post-navigation .nav-next {
+  body.single .site-content .site-main .navigation.post-navigation .nav-next {
     position: relative;
     left: -1px; }
 
@@ -156,24 +156,24 @@ body.single .site-content .navigation.post-navigation {
   body .site .site-footer {
     margin-left: 29.4118%;
     width: 70.5882%; }
-  body.single .site-content {
+  body.single .site-content .site-main {
     margin-right: 29.4118%;
     width: 55.5882%; }
-    body.single .site-content .hentry, body.single .site-content .post-navigation {
+    body.single .site-content .site-main .hentry, body.single .site-content .site-main .post-navigation {
       float: left; }
-    body.single .site-content .navigation.post-navigation {
+    body.single .site-content .site-main .navigation.post-navigation {
       padding: 0;
       position: absolute;
       right: 0;
       width: 14.4118%; }
-      body.single .site-content .navigation.post-navigation .nav-previous, body.single .site-content .navigation.post-navigation .nav-next {
+      body.single .site-content .site-main .navigation.post-navigation .nav-previous, body.single .site-content .site-main .navigation.post-navigation .nav-next {
         width: 100%;
         float: none;
         padding-right: 20%; }
-      body.single .site-content .navigation.post-navigation .nav-next {
+      body.single .site-content .site-main .navigation.post-navigation .nav-next {
         left: initial;
         top: -1px; }
-    body.single .site-content article.hentry .entry-footer .cat-links a:hover {
+    body.single .site-content .site-main article.hentry .entry-footer .cat-links a:hover {
       background-color: Silver; } }
 
 body .site .sidebar, body .site .site-content, body .site .site-footer {
