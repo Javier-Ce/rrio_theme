@@ -82,13 +82,15 @@ body .site {
         line-height: 1;
         display: inline-block;
         margin-top: 0; }
-    body .site .sidebar .secondary .widget-area .widget {
-      padding: 0;
-      margin-bottom: 50px; }
-      body .site .sidebar .secondary .widget-area .widget .widget-title, body .site .sidebar .secondary .widget-area .widget caption {
-        margin-bottom: 5px; }
-      body .site .sidebar .secondary .widget-area .widget ul.wp-tag-cloud {
-        margin: 0; }
+    body .site .sidebar .secondary {
+      margin-left: 0; }
+      body .site .sidebar .secondary .widget-area .widget {
+        padding: 0;
+        margin-bottom: 50px; }
+        body .site .sidebar .secondary .widget-area .widget .widget-title, body .site .sidebar .secondary .widget-area .widget caption {
+          margin-bottom: 5px; }
+        body .site .sidebar .secondary .widget-area .widget ul.wp-tag-cloud {
+          margin: 0; }
   body .site .site-content .site-main {
     padding-top: 0 !important; }
     body .site .site-content .site-main .page-header {
