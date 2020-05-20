@@ -57,7 +57,7 @@ endif;
 
 
 
-function twentyfifteen_entry_meta() {
+function twentyfifteen_child_entry_meta() {
 		if ( is_sticky() && is_home() && ! is_paged() ) {
 			printf( '<span class="sticky-post">%s</span>', __( 'Featured', 'twentyfifteen' ) );
 		}
@@ -86,16 +86,18 @@ function twentyfifteen_entry_meta() {
 				esc_attr( get_the_modified_date( 'c' ) ),
 				get_the_modified_date()
 			);
-
+			/*
 			printf(
 				'<span class="posted-on"><span class="screen-reader-text">%1$s </span><a href="%2$s" rel="bookmark">%3$s</a></span>',
 				_x( 'Posted on', 'Used before publish date.', 'twentyfifteen' ),
 				esc_url( get_permalink() ),
 				$time_string
 			);
+			*/
 		}
 
 		if ( 'post' == get_post_type() ) {
+			/*
 			if ( is_singular() || is_multi_author() ) {
 				printf(
 					'<span class="byline"><span class="author vcard"><span class="screen-reader-text">%1$s </span><a class="url fn n" href="%2$s">%3$s</a></span></span>',
@@ -104,6 +106,7 @@ function twentyfifteen_entry_meta() {
 					get_the_author()
 				);
 			}
+			*/
 
 			$categories_list = get_the_category_list( _x( ' ', 'Used between list items, there is a space after the comma.', 'twentyfifteen' ) );
 			if ( $categories_list && twentyfifteen_categorized_blog() ) {

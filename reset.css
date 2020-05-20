@@ -364,6 +364,15 @@ h1.entry-title, h2.entry-title {
   h1.entry-title a:hover, h2.entry-title a:hover {
     border-color: Grey; }
 
+.posted-on a, .cat-links a, .tags-links a {
+  font-size: 1.5125rem !important;
+  color: DarkBlue !important;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+  .posted-on a a:hover, .cat-links a a:hover, .tags-links a a:hover {
+    border-color: Grey; }
+
 h2.entry-title a, .entry-content a, .entry-footer a {
   font-size: 1.5125rem !important;
   color: DarkBlue !important;

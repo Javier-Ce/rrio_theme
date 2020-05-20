@@ -11,28 +11,18 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	
 	<?php
-		// Post thumbnail.
-		if ( $count==0 && !is_archive()) :
-			if ( !is_single() ) :
-			?>
-				<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
-			<?php
-			endif;
-				the_post_thumbnail( 'large', array( 'alt' => get_the_title() ) );
-		else :
-			twentyfifteen_post_thumbnail();
-			if ( !is_single() ) :
-			?>
+	if(!is_single()):
+		if ( $count==0 && !is_archive()) : ?>
+			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+				<?php the_post_thumbnail( 'large', array( 'alt' => get_the_title() ) ); ?>
 			</a>
-
-
-		<?php 
-			endif;
+		<?php
+		else:
+			twentyfifteen_post_thumbnail();
 		endif;
-		
-		//the_post_thumbnail('thumbnail');
-		//echo 'H';
+	endif;
 	?>
 
 	<header class="entry-header">
@@ -40,14 +30,21 @@
 		if ( is_single() ) :
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			else :
-				the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', 'v'), '</a></h2>' );
+				the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 			endif;
 			echo '<span class="date">'.get_the_date().'</span>';
 			?>
 	</header><!-- .entry-header -->
 
+	<?php
+	if(is_single()):
+		the_post_thumbnail( 'large', array('alt' => get_the_title()));
+		twentyfifteen_child_entry_meta();
+	endif; ?>
+
 	<div class="entry-content">
 		<?php
+		if ( is_single() ) :
 			the_content(
 				sprintf(
 					/* translators: %s: Post title. */
@@ -66,7 +63,8 @@
 					'separator'   => '<span class="screen-reader-text">, </span>',
 				)
 			);
-			?>
+		endif;	
+		?>
 	</div><!-- .entry-content -->
 
 	<?php
@@ -77,11 +75,6 @@
 	?>
 
 	<footer class="entry-footer">
-		<?php
-		if ( is_single() ) : 
-			twentyfifteen_entry_meta(); 
-		endif;
-		?>
 		<?php //edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 

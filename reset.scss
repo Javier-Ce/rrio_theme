@@ -162,6 +162,7 @@ input[type="submit"] {
 h1.entry-title,h2.entry-title{
 	@include Reset_Typography();
 }
+.posted-on, .cat-links, .tags-links{ a {@include Reset_Typography();} }
 h2.entry-title, .entry-content, .entry-footer{
 	a{
 		@include Reset_Typography();
