@@ -139,7 +139,7 @@ body.single .site .site-content .hentry {
   body.single .site .site-content .hentry .entry-header, body.single .site .site-content .hentry img {
     line-height: 0;
     margin-bottom: 50px; }
-  body.single .site .site-content .hentry .posted-on, body.single .site .site-content .hentry .cat-links, body.single .site .site-content .hentry .tag-links {
+  body.single .site .site-content .hentry .posted-on, body.single .site .site-content .hentry .cat-links, body.single .site .site-content .hentry .tags-links {
     display: block; }
 
 body.single .site .site-content .navigation.post-navigation {
