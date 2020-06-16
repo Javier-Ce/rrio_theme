@@ -19,8 +19,6 @@
 				<?php the_post_thumbnail( 'large', array( 'alt' => get_the_title() ) ); ?>
 			</a>
 		<?php
-		else:
-			twentyfifteen_post_thumbnail();
 		endif;
 	endif;
 	?>
