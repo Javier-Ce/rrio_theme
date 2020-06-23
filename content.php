@@ -12,11 +12,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-	<?php
-	if(!is_single()):
-		twentyfifteen_post_thumbnail();
-	endif;
-	?>
+	<?php if(!is_single()):?>
+
+		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+			<?php the_post_thumbnail( 'post-thumbnail', array( 'alt' => get_the_title() ) ); ?>
+		</a>
+		
+	<?php endif; ?>
 
 	<header class="entry-header">
 		<?php
@@ -31,7 +33,7 @@
 
 	<?php
 	if(is_single()):
-		//the_post_thumbnail( 'large', array('alt' => get_the_title()));
+		the_post_thumbnail( 'large', array('alt' => get_the_title()));
 		twentyfifteen_child_entry_meta();
 	endif; ?>
 
