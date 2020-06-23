@@ -13,7 +13,7 @@
 */
 
 $color:DarkBlue;
-$color2: Silver;
+$color2: PeachPuff;
 $fontWeight:300;
 $MarginTop:4rem;
 $widget_interspace:50px;
@@ -37,7 +37,9 @@ $lineHeight:1;
 	margin: 0 0 0 0 !important;
 }
 @mixin Cat(){
-	border: $border;
+	//border: $border;
+	border-top: none !important;
+	background-color:$color2;
 	display: inline-block;
 	border-radius:20px;
 	padding: 1px 12px !important;
@@ -307,23 +309,37 @@ body{
 						}
 						ul.wp-tag-cloud{ margin: 0; }
 						#calendar_wrap{
+							width: 150%;
 							text-transform:capitalize;
 							thead{ display:none;}
 							tbody{ background-color:transparent;}
 							tbody::after{ content:"";}
-							td a{
-								background-color: $color2;
-								border: 1px solid $color2;	
-							}
-							td a:hover{ border-color:$color;}
-							td#next{text-align:right;}
-							td#prev{text-align:left;}
-							td#next,td#prev{
-								a{
-									@include Tag();
-									background-color:transparent;
+							tr{
+								height: 30px;
+								margin: 2px 0 ;	
+								display: block;
+								td{
+									width: 30px;
+									margin: 0 2px;
+									display: inline-block;
 								}
-								a:hover{ @include Taghover();}
+								td a{
+									background-color: $color2;
+									border: 1px solid $color2;	
+									border-radius:20px;
+								}
+								td a:hover{ border-color:$color;}
+								td#next{text-align:right;}
+								td#prev{text-align:left;}
+								td#next,td#prev{
+									a{
+										@include Cat();
+									}
+									a:hover{ @include Taghover();}
+								}
+							}
+							tfoot{
+								tr td{ width:auto; }
 							}
 						}
 					}

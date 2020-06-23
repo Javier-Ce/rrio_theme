@@ -30,16 +30,17 @@ h1.page-title,
     padding: 2px 8px !important;
     margin: 0 0 0 0 !important; }
     .wp-tag-cloud li a:hover, .tags-links a:hover {
-      background-color: Silver; }
+      background-color: PeachPuff; }
 
 .cat-item, .cat-links a {
-  border: 1px solid DarkBlue !important;
+  border-top: none !important;
+  background-color: PeachPuff;
   display: inline-block;
   border-radius: 20px;
   padding: 1px 12px !important;
   margin-bottom: 5px; }
   .cat-item:hover, .cat-links a:hover {
-    background-color: Silver; }
+    background-color: PeachPuff; }
 
 .page-title, .taxonomy-description {
   margin-left: 0; }
@@ -48,7 +49,7 @@ h1.page-title,
   content: none; }
 
 .cat-item.current-cat {
-  background-color: Silver; }
+  background-color: PeachPuff; }
 
 /**
  * 12.1 Posts and pages
@@ -185,7 +186,7 @@ body.single .site .site-content .navigation.post-navigation {
     body.single .site .site-content .hentry {
       width: 75%; }
       body.single .site .site-content .hentry .entry-footer .cat-links a:hover {
-        background-color: Silver; }
+        background-color: PeachPuff; }
     body.single .site .site-content .navigation.post-navigation {
       float: left;
       width: 25%;
@@ -216,6 +217,7 @@ body .site .sidebar .secondary .widget-area .widget ul.wp-tag-cloud {
   margin: 0; }
 
 body .site .sidebar .secondary .widget-area .widget #calendar_wrap {
+  width: 150%;
   text-transform: capitalize; }
   body .site .sidebar .secondary .widget-area .widget #calendar_wrap thead {
     display: none; }
@@ -223,22 +225,35 @@ body .site .sidebar .secondary .widget-area .widget #calendar_wrap {
     background-color: transparent; }
   body .site .sidebar .secondary .widget-area .widget #calendar_wrap tbody::after {
     content: ""; }
-  body .site .sidebar .secondary .widget-area .widget #calendar_wrap td a {
-    background-color: Silver;
-    border: 1px solid Silver; }
-  body .site .sidebar .secondary .widget-area .widget #calendar_wrap td a:hover {
-    border-color: DarkBlue; }
-  body .site .sidebar .secondary .widget-area .widget #calendar_wrap td#next {
-    text-align: right; }
-  body .site .sidebar .secondary .widget-area .widget #calendar_wrap td#prev {
-    text-align: left; }
-  body .site .sidebar .secondary .widget-area .widget #calendar_wrap td#next a, body .site .sidebar .secondary .widget-area .widget #calendar_wrap td#prev a {
-    border: 1px solid DarkBlue !important;
-    padding: 2px 8px !important;
-    margin: 0 0 0 0 !important;
-    background-color: transparent; }
-  body .site .sidebar .secondary .widget-area .widget #calendar_wrap td#next a:hover, body .site .sidebar .secondary .widget-area .widget #calendar_wrap td#prev a:hover {
-    background-color: Silver; }
+  body .site .sidebar .secondary .widget-area .widget #calendar_wrap tr {
+    height: 30px;
+    margin: 2px 0;
+    display: block; }
+    body .site .sidebar .secondary .widget-area .widget #calendar_wrap tr td {
+      width: 30px;
+      margin: 0 2px;
+      display: inline-block; }
+    body .site .sidebar .secondary .widget-area .widget #calendar_wrap tr td a {
+      background-color: PeachPuff;
+      border: 1px solid PeachPuff;
+      border-radius: 20px; }
+    body .site .sidebar .secondary .widget-area .widget #calendar_wrap tr td a:hover {
+      border-color: DarkBlue; }
+    body .site .sidebar .secondary .widget-area .widget #calendar_wrap tr td#next {
+      text-align: right; }
+    body .site .sidebar .secondary .widget-area .widget #calendar_wrap tr td#prev {
+      text-align: left; }
+    body .site .sidebar .secondary .widget-area .widget #calendar_wrap tr td#next a, body .site .sidebar .secondary .widget-area .widget #calendar_wrap tr td#prev a {
+      border-top: none !important;
+      background-color: PeachPuff;
+      display: inline-block;
+      border-radius: 20px;
+      padding: 1px 12px !important;
+      margin-bottom: 5px; }
+    body .site .sidebar .secondary .widget-area .widget #calendar_wrap tr td#next a:hover, body .site .sidebar .secondary .widget-area .widget #calendar_wrap tr td#prev a:hover {
+      background-color: PeachPuff; }
+  body .site .sidebar .secondary .widget-area .widget #calendar_wrap tfoot tr td {
+    width: auto; }
 
 body .site .site-content .site-main header.page-header {
   box-shadow: none; }
@@ -285,7 +300,7 @@ body .site .site-content .site-main nav.navigation.pagination {
     body .site .site-content .site-main nav.navigation.pagination .nav-links .page-numbers.prev:before, body .site .site-content .site-main nav.navigation.pagination .nav-links .page-numbers.next:before {
       content: none; }
     body .site .site-content .site-main nav.navigation.pagination .nav-links .page-numbers.current, body .site .site-content .site-main nav.navigation.pagination .nav-links .page-numbers:hover {
-      background-color: Silver;
+      background-color: PeachPuff;
       font-weight: 300; }
 
 body .site .site-footer {
@@ -302,7 +317,7 @@ body .site .navigation.post-navigation {
       padding: 2px 8px !important;
       margin: 0 0 0 0 !important; }
       body .site .navigation.post-navigation .nav-previous a:hover, body .site .navigation.post-navigation .nav-next a:hover {
-        background-color: Silver; }
+        background-color: PeachPuff; }
       body .site .navigation.post-navigation .nav-previous a:before, body .site .navigation.post-navigation .nav-next a:before {
         background-color: transparent; }
       body .site .navigation.post-navigation .nav-previous a:after, body .site .navigation.post-navigation .nav-next a:after {
