@@ -35,7 +35,6 @@
 
 	<?php
 	if(is_single()):
-		the_post_thumbnail( 'large', array('alt' => get_the_title()));
 		twentyfifteen_child_entry_meta();
 	endif; ?>
 
