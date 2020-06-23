@@ -14,14 +14,7 @@
 	
 	<?php
 	if(!is_single()):
-		if ( $count==0 && !is_archive()) : ?>
-			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
-				<?php the_post_thumbnail( 'large', array( 'alt' => get_the_title() ) ); ?>
-			</a>
-		<?php
-		else:
-			twentyfifteen_post_thumbnail();
-		endif;
+		twentyfifteen_post_thumbnail();
 	endif;
 	?>
 
