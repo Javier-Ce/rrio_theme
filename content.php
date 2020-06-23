@@ -16,7 +16,7 @@
 
 		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
 			<?php
-			the_post_thumbnail( 'thumbnail', array('alt' => get_the_title()));
+			the_post_thumbnail( 'large', array('alt' => get_the_title()));
 			?>
 		</a>
 
