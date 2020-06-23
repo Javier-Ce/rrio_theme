@@ -97,7 +97,7 @@ body .site {
       margin: 0 0 50px 0; }
     body .site .site-content .site-main .hentry {
       float: left;
-      width: 50%;
+      width: 100%;
       margin: 0 0% 50px 0; }
       body .site .site-content .site-main .hentry:nth-child(odd) {
         padding: 0 4% 0 2%; }

@@ -15,9 +15,11 @@
 	<?php if(!is_single()):?>
 
 		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
-			<?php the_post_thumbnail( 'post-thumbnail', array( 'alt' => get_the_title() ) ); ?>
+			<?php
+			the_post_thumbnail( 'thumbnail', array('alt' => get_the_title()));
+			?>
 		</a>
-		
+
 	<?php endif; ?>
 
 	<header class="entry-header">
